@@ -1,0 +1,337 @@
+[0.000000] (-) TimerEvent: {}
+[0.000438] (upper_body_demo) JobQueued: {'identifier': 'upper_body_demo', 'dependencies': OrderedDict()}
+[0.000775] (upper_body_demo) JobStarted: {'identifier': 'upper_body_demo'}
+[0.012309] (upper_body_demo) JobProgress: {'identifier': 'upper_body_demo', 'progress': 'cmake'}
+[0.013171] (upper_body_demo) JobProgress: {'identifier': 'upper_body_demo', 'progress': 'build'}
+[0.013955] (upper_body_demo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/niic/upper_body_demo/build/upper_body_demo', '--', '-j12', '-l12'], 'cwd': '/home/niic/upper_body_demo/build/upper_body_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'niic'), ('SSH_CLIENT', '192.168.0.61 58114 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/niic/third_party/install/lib:/home/niic/tr5-orin/ros2_ws/src/niic_ethercat_motors/libtorch/lib:/home/niic/tr5-orin/ros2_ws/src/rl_pub/libtorch/lib:/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors/lib:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces/lib:/home/niic/IMU/install/xsens_mti_ros2_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/niic'), ('OLDPWD', '/home/niic'), ('SSH_TTY', '/dev/pts/10'), ('JETSON_L4T', '36.4.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/niic/tr5-orin/ros2_ws/install:/home/niic/IMU/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'niic'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422624327093'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '52'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/niic/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('ROS_DOMAIN_ID', '53'), ('AMENT_PREFIX_PATH', '/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces:/home/niic/IMU/install/xsens_mti_ros2_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/niic/upper_body_demo/build/upper_body_demo'), ('SSH_CONNECTION', '192.168.0.61 58114 192.168.1.14 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors/local/lib/python3.10/dist-packages:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces/local/lib/python3.10/dist-packages:/home/niic/IMU/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.1'), ('CMAKE_PREFIX_PATH', '/home/niic/third_party/install:/home/niic/third_party/pinocchio:/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces:/home/niic/IMU/install/xsens_mti_ros2_driver:/opt/ros/humble')]), 'shell': False}
+[0.050876] (upper_body_demo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099638] (-) TimerEvent: {}
+[0.200081] (-) TimerEvent: {}
+[0.236039] (upper_body_demo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.272470] (upper_body_demo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.275595] (upper_body_demo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.283133] (upper_body_demo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.295293] (upper_body_demo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.300131] (-) TimerEvent: {}
+[0.311258] (upper_body_demo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.352122] (upper_body_demo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.353934] (upper_body_demo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400272] (-) TimerEvent: {}
+[0.482709] (upper_body_demo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.500355] (-) TimerEvent: {}
+[0.544991] (upper_body_demo) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.586163] (upper_body_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: program_options \n'}
+[0.598167] (upper_body_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  \n'}
+[0.600437] (-) TimerEvent: {}
+[0.700869] (upper_body_demo) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.701190] (-) TimerEvent: {}
+[0.728663] (upper_body_demo) StdoutLine: {'line': b'-- Generating done\n'}
+[0.737305] (upper_body_demo) StdoutLine: {'line': b'-- Build files have been written to: /home/niic/upper_body_demo/build/upper_body_demo\n'}
+[0.781262] (upper_body_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target wave_hand_demo\x1b[0m\n'}
+[0.782633] (upper_body_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target teleop\x1b[0m\n'}
+[0.794209] (upper_body_demo) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/enable.dir/src/enable/main.cpp.o\x1b[0m\n'}
+[0.801328] (-) TimerEvent: {}
+[0.817512] (upper_body_demo) StdoutLine: {'line': b'[ 41%] Built target wave_hand_demo\n'}
+[0.824239] (upper_body_demo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o\x1b[0m\n'}
+[0.901470] (-) TimerEvent: {}
+[1.001947] (-) TimerEvent: {}
+[1.102454] (-) TimerEvent: {}
+[1.202937] (-) TimerEvent: {}
+[1.303447] (-) TimerEvent: {}
+[1.404143] (-) TimerEvent: {}
+[1.504613] (-) TimerEvent: {}
+[1.605090] (-) TimerEvent: {}
+[1.705560] (-) TimerEvent: {}
+[1.806019] (-) TimerEvent: {}
+[1.906494] (-) TimerEvent: {}
+[2.006986] (-) TimerEvent: {}
+[2.107470] (-) TimerEvent: {}
+[2.207967] (-) TimerEvent: {}
+[2.308471] (-) TimerEvent: {}
+[2.408930] (-) TimerEvent: {}
+[2.509424] (-) TimerEvent: {}
+[2.609939] (-) TimerEvent: {}
+[2.710450] (-) TimerEvent: {}
+[2.810938] (-) TimerEvent: {}
+[2.911447] (-) TimerEvent: {}
+[3.011933] (-) TimerEvent: {}
+[3.112472] (-) TimerEvent: {}
+[3.213002] (-) TimerEvent: {}
+[3.313534] (-) TimerEvent: {}
+[3.414025] (-) TimerEvent: {}
+[3.514520] (-) TimerEvent: {}
+[3.615009] (-) TimerEvent: {}
+[3.715517] (-) TimerEvent: {}
+[3.816014] (-) TimerEvent: {}
+[3.916528] (-) TimerEvent: {}
+[4.017037] (-) TimerEvent: {}
+[4.117606] (-) TimerEvent: {}
+[4.218280] (-) TimerEvent: {}
+[4.318755] (-) TimerEvent: {}
+[4.419251] (-) TimerEvent: {}
+[4.519742] (-) TimerEvent: {}
+[4.620235] (-) TimerEvent: {}
+[4.720726] (-) TimerEvent: {}
+[4.821230] (-) TimerEvent: {}
+[4.921742] (-) TimerEvent: {}
+[5.022259] (-) TimerEvent: {}
+[5.122761] (-) TimerEvent: {}
+[5.223273] (-) TimerEvent: {}
+[5.323794] (-) TimerEvent: {}
+[5.424292] (-) TimerEvent: {}
+[5.524769] (-) TimerEvent: {}
+[5.625278] (-) TimerEvent: {}
+[5.725783] (-) TimerEvent: {}
+[5.826318] (-) TimerEvent: {}
+[5.926825] (-) TimerEvent: {}
+[6.027336] (-) TimerEvent: {}
+[6.127816] (-) TimerEvent: {}
+[6.228295] (-) TimerEvent: {}
+[6.328756] (-) TimerEvent: {}
+[6.429244] (-) TimerEvent: {}
+[6.529736] (-) TimerEvent: {}
+[6.630233] (-) TimerEvent: {}
+[6.730714] (-) TimerEvent: {}
+[6.831225] (-) TimerEvent: {}
+[6.931700] (-) TimerEvent: {}
+[7.032166] (-) TimerEvent: {}
+[7.132667] (-) TimerEvent: {}
+[7.205280] (upper_body_demo) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX executable enable\x1b[0m\n'}
+[7.232807] (-) TimerEvent: {}
+[7.333584] (-) TimerEvent: {}
+[7.434077] (-) TimerEvent: {}
+[7.462301] (upper_body_demo) StdoutLine: {'line': b'[ 58%] Built target enable\n'}
+[7.534204] (-) TimerEvent: {}
+[7.634704] (-) TimerEvent: {}
+[7.735188] (-) TimerEvent: {}
+[7.835662] (-) TimerEvent: {}
+[7.936130] (-) TimerEvent: {}
+[8.036602] (-) TimerEvent: {}
+[8.137124] (-) TimerEvent: {}
+[8.237639] (-) TimerEvent: {}
+[8.338119] (-) TimerEvent: {}
+[8.438585] (-) TimerEvent: {}
+[8.539029] (-) TimerEvent: {}
+[8.639494] (-) TimerEvent: {}
+[8.740237] (-) TimerEvent: {}
+[8.840656] (-) TimerEvent: {}
+[8.941078] (-) TimerEvent: {}
+[9.041500] (-) TimerEvent: {}
+[9.141905] (-) TimerEvent: {}
+[9.242502] (-) TimerEvent: {}
+[9.342944] (-) TimerEvent: {}
+[9.443408] (-) TimerEvent: {}
+[9.543882] (-) TimerEvent: {}
+[9.644353] (-) TimerEvent: {}
+[9.744822] (-) TimerEvent: {}
+[9.845364] (-) TimerEvent: {}
+[9.945810] (-) TimerEvent: {}
+[10.046282] (-) TimerEvent: {}
+[10.146727] (-) TimerEvent: {}
+[10.247158] (-) TimerEvent: {}
+[10.347629] (-) TimerEvent: {}
+[10.448172] (-) TimerEvent: {}
+[10.548623] (-) TimerEvent: {}
+[10.649042] (-) TimerEvent: {}
+[10.749481] (-) TimerEvent: {}
+[10.849927] (-) TimerEvent: {}
+[10.950404] (-) TimerEvent: {}
+[11.050862] (-) TimerEvent: {}
+[11.151323] (-) TimerEvent: {}
+[11.251727] (-) TimerEvent: {}
+[11.352126] (-) TimerEvent: {}
+[11.452544] (-) TimerEvent: {}
+[11.553009] (-) TimerEvent: {}
+[11.653478] (-) TimerEvent: {}
+[11.753915] (-) TimerEvent: {}
+[11.854356] (-) TimerEvent: {}
+[11.954800] (-) TimerEvent: {}
+[12.055267] (-) TimerEvent: {}
+[12.155721] (-) TimerEvent: {}
+[12.256158] (-) TimerEvent: {}
+[12.356580] (-) TimerEvent: {}
+[12.457015] (-) TimerEvent: {}
+[12.557465] (-) TimerEvent: {}
+[12.657922] (-) TimerEvent: {}
+[12.758397] (-) TimerEvent: {}
+[12.858844] (-) TimerEvent: {}
+[12.959286] (-) TimerEvent: {}
+[13.059698] (-) TimerEvent: {}
+[13.160146] (-) TimerEvent: {}
+[13.260601] (-) TimerEvent: {}
+[13.361035] (-) TimerEvent: {}
+[13.461481] (-) TimerEvent: {}
+[13.561879] (-) TimerEvent: {}
+[13.662354] (-) TimerEvent: {}
+[13.741329] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[13.741695] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:148:88:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<float, float>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 \x1b]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_base\x07in GCC 10.1\x1b]8;;\x07\n'}
+[13.741816] (upper_body_demo) StderrLine: {'line': b'  148 |           auto [lf, lb] = solveIK(ctx.target_q_rot[7],  ctx.target_q_rot[8], Side::Left\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[13.741910] (upper_body_demo) StderrLine: {'line': b'      |                                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.762433] (-) TimerEvent: {}
+[13.862769] (-) TimerEvent: {}
+[13.963185] (-) TimerEvent: {}
+[14.063646] (-) TimerEvent: {}
+[14.164166] (-) TimerEvent: {}
+[14.264648] (-) TimerEvent: {}
+[14.365140] (-) TimerEvent: {}
+[14.465651] (-) TimerEvent: {}
+[14.566089] (-) TimerEvent: {}
+[14.666537] (-) TimerEvent: {}
+[14.767032] (-) TimerEvent: {}
+[14.867519] (-) TimerEvent: {}
+[14.967971] (-) TimerEvent: {}
+[15.068431] (-) TimerEvent: {}
+[15.168866] (-) TimerEvent: {}
+[15.269297] (-) TimerEvent: {}
+[15.369761] (-) TimerEvent: {}
+[15.470216] (-) TimerEvent: {}
+[15.570640] (-) TimerEvent: {}
+[15.671081] (-) TimerEvent: {}
+[15.771478] (-) TimerEvent: {}
+[15.871925] (-) TimerEvent: {}
+[15.972381] (-) TimerEvent: {}
+[16.072817] (-) TimerEvent: {}
+[16.173251] (-) TimerEvent: {}
+[16.273664] (-) TimerEvent: {}
+[16.374107] (-) TimerEvent: {}
+[16.474552] (-) TimerEvent: {}
+[16.574998] (-) TimerEvent: {}
+[16.675441] (-) TimerEvent: {}
+[16.775878] (-) TimerEvent: {}
+[16.876326] (-) TimerEvent: {}
+[16.976764] (-) TimerEvent: {}
+[17.077153] (-) TimerEvent: {}
+[17.177566] (-) TimerEvent: {}
+[17.277967] (-) TimerEvent: {}
+[17.378407] (-) TimerEvent: {}
+[17.478844] (-) TimerEvent: {}
+[17.579320] (-) TimerEvent: {}
+[17.679800] (-) TimerEvent: {}
+[17.780283] (-) TimerEvent: {}
+[17.880701] (-) TimerEvent: {}
+[17.981177] (-) TimerEvent: {}
+[18.081666] (-) TimerEvent: {}
+[18.182255] (-) TimerEvent: {}
+[18.282847] (-) TimerEvent: {}
+[18.383344] (-) TimerEvent: {}
+[18.483924] (-) TimerEvent: {}
+[18.584413] (-) TimerEvent: {}
+[18.684904] (-) TimerEvent: {}
+[18.785499] (-) TimerEvent: {}
+[18.885978] (-) TimerEvent: {}
+[18.986467] (-) TimerEvent: {}
+[19.086963] (-) TimerEvent: {}
+[19.187434] (-) TimerEvent: {}
+[19.287888] (-) TimerEvent: {}
+[19.388367] (-) TimerEvent: {}
+[19.488811] (-) TimerEvent: {}
+[19.589255] (-) TimerEvent: {}
+[19.689697] (-) TimerEvent: {}
+[19.790118] (-) TimerEvent: {}
+[19.890542] (-) TimerEvent: {}
+[19.990994] (-) TimerEvent: {}
+[20.091446] (-) TimerEvent: {}
+[20.191862] (-) TimerEvent: {}
+[20.292268] (-) TimerEvent: {}
+[20.392689] (-) TimerEvent: {}
+[20.493152] (-) TimerEvent: {}
+[20.593592] (-) TimerEvent: {}
+[20.693985] (-) TimerEvent: {}
+[20.794397] (-) TimerEvent: {}
+[20.894818] (-) TimerEvent: {}
+[20.995279] (-) TimerEvent: {}
+[21.095710] (-) TimerEvent: {}
+[21.196142] (-) TimerEvent: {}
+[21.296554] (-) TimerEvent: {}
+[21.396996] (-) TimerEvent: {}
+[21.497491] (-) TimerEvent: {}
+[21.598227] (-) TimerEvent: {}
+[21.698621] (-) TimerEvent: {}
+[21.799018] (-) TimerEvent: {}
+[21.899483] (-) TimerEvent: {}
+[22.000113] (-) TimerEvent: {}
+[22.100669] (-) TimerEvent: {}
+[22.201131] (-) TimerEvent: {}
+[22.301534] (-) TimerEvent: {}
+[22.401972] (-) TimerEvent: {}
+[22.502465] (-) TimerEvent: {}
+[22.602956] (-) TimerEvent: {}
+[22.703441] (-) TimerEvent: {}
+[22.803844] (-) TimerEvent: {}
+[22.904267] (-) TimerEvent: {}
+[23.004696] (-) TimerEvent: {}
+[23.105168] (-) TimerEvent: {}
+[23.110716] (upper_body_demo) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable teleop\x1b[0m\n'}
+[23.205299] (-) TimerEvent: {}
+[23.305999] (-) TimerEvent: {}
+[23.406662] (-) TimerEvent: {}
+[23.507166] (-) TimerEvent: {}
+[23.607651] (-) TimerEvent: {}
+[23.708430] (-) TimerEvent: {}
+[23.809148] (-) TimerEvent: {}
+[23.909629] (-) TimerEvent: {}
+[24.010128] (-) TimerEvent: {}
+[24.110634] (-) TimerEvent: {}
+[24.211118] (-) TimerEvent: {}
+[24.311531] (-) TimerEvent: {}
+[24.411945] (-) TimerEvent: {}
+[24.512372] (-) TimerEvent: {}
+[24.612785] (-) TimerEvent: {}
+[24.713261] (-) TimerEvent: {}
+[24.813692] (-) TimerEvent: {}
+[24.914075] (-) TimerEvent: {}
+[24.947597] (upper_body_demo) StdoutLine: {'line': b'[100%] Built target teleop\n'}
+[24.964280] (upper_body_demo) CommandEnded: {'returncode': 0}
+[24.965230] (upper_body_demo) JobProgress: {'identifier': 'upper_body_demo', 'progress': 'install'}
+[24.979228] (upper_body_demo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/niic/upper_body_demo/build/upper_body_demo'], 'cwd': '/home/niic/upper_body_demo/build/upper_body_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'niic'), ('SSH_CLIENT', '192.168.0.61 58114 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/niic/third_party/install/lib:/home/niic/tr5-orin/ros2_ws/src/niic_ethercat_motors/libtorch/lib:/home/niic/tr5-orin/ros2_ws/src/rl_pub/libtorch/lib:/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors/lib:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces/lib:/home/niic/IMU/install/xsens_mti_ros2_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/niic'), ('OLDPWD', '/home/niic'), ('SSH_TTY', '/dev/pts/10'), ('JETSON_L4T', '36.4.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/niic/tr5-orin/ros2_ws/install:/home/niic/IMU/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'niic'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422624327093'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '52'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/niic/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('ROS_DOMAIN_ID', '53'), ('AMENT_PREFIX_PATH', '/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces:/home/niic/IMU/install/xsens_mti_ros2_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/niic/upper_body_demo/build/upper_body_demo'), ('SSH_CONNECTION', '192.168.0.61 58114 192.168.1.14 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors/local/lib/python3.10/dist-packages:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces/local/lib/python3.10/dist-packages:/home/niic/IMU/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.1'), ('CMAKE_PREFIX_PATH', '/home/niic/third_party/install:/home/niic/third_party/pinocchio:/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces:/home/niic/IMU/install/xsens_mti_ros2_driver:/opt/ros/humble')]), 'shell': False}
+[24.991315] (upper_body_demo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.991627] (upper_body_demo) StdoutLine: {'line': b'-- Installing: /home/niic/upper_body_demo/install/upper_body_demo/lib/upper_body_demo/enable\n'}
+[24.993709] (upper_body_demo) StdoutLine: {'line': b'-- Set runtime path of "/home/niic/upper_body_demo/install/upper_body_demo/lib/upper_body_demo/enable" to ""\n'}
+[24.993902] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo\n'}
+[24.994095] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat\n'}
+[24.994266] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/error.hpp\n'}
+[24.994418] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/thread_mutex.hpp\n'}
+[24.994618] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/master.hpp\n'}
+[24.994789] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/eni_config.hpp\n'}
+[24.994991] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/types.hpp\n'}
+[24.995123] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/ipc.hpp\n'}
+[24.995227] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/pwm.hpp\n'}
+[24.995317] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/slice.hpp\n'}
+[24.995401] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/buffer_locked.hpp\n'}
+[24.995483] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/task_collaborative.hpp\n'}
+[24.995566] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/sdo_request.hpp\n'}
+[24.995647] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/log.hpp\n'}
+[24.995753] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/reg_request.hpp\n'}
+[24.995831] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail\n'}
+[24.995915] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/config.hpp\n'}
+[24.995995] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/os_string.hpp\n'}
+[24.996084] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/logger.hpp\n'}
+[24.996219] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/ioctl.hpp\n'}
+[24.996317] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/file.hpp\n'}
+[24.996398] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/log_handler.hpp\n'}
+[24.996486] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/utility.hpp\n'}
+[24.996564] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/thread.hpp\n'}
+[24.996640] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/sii_crc.hpp\n'}
+[24.996715] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/esi_index.hpp\n'}
+[24.996790] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/dc.hpp\n'}
+[24.996865] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/task.hpp\n'}
+[24.996940] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/version.hpp\n'}
+[24.997015] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/run_time_stat.hpp\n'}
+[24.997107] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/thread_rtlock.hpp\n'}
+[24.997187] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/task_assist.hpp\n'}
+[24.997263] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/slave_config.hpp\n'}
+[24.997338] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/buffer_rtlocked.hpp\n'}
+[24.997412] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/rokae\n'}
+[24.997800] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/rokae/extra.hpp\n'}
+[24.998318] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/s2s_func.hpp\n'}
+[24.999041] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/niic_api.hpp\n'}
+[24.999299] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/algorithm_threads.hpp\n'}
+[24.999485] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/spi_io.hpp\n'}
+[24.999734] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/buffer.hpp\n'}
+[24.999841] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/task_interface.hpp\n'}
+[25.000049] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/upper_body_demo\n'}
+[25.000192] (upper_body_demo) StdoutLine: {'line': b'-- Installing: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.dsv\n'}
+[25.000575] (upper_body_demo) CommandEnded: {'returncode': 0}
+[25.014227] (-) TimerEvent: {}
+[25.024016] (upper_body_demo) JobEnded: {'identifier': 'upper_body_demo', 'rc': 0}
+[25.025095] (-) EventReactorShutdown: {}

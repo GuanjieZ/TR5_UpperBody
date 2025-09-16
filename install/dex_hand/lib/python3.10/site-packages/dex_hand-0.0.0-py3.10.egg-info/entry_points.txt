@@ -1,0 +1,4 @@
+[console_scripts]
+rps = dex_hand.rps:main
+trigger = dex_hand.trigger:main
+

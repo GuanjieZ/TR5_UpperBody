@@ -1,0 +1,212 @@
+[0.000000] (-) TimerEvent: {}
+[0.000486] (upper_body_demo) JobQueued: {'identifier': 'upper_body_demo', 'dependencies': OrderedDict()}
+[0.000841] (upper_body_demo) JobStarted: {'identifier': 'upper_body_demo'}
+[0.012848] (upper_body_demo) JobProgress: {'identifier': 'upper_body_demo', 'progress': 'cmake'}
+[0.013913] (upper_body_demo) JobProgress: {'identifier': 'upper_body_demo', 'progress': 'build'}
+[0.015160] (upper_body_demo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/niic/upper_body_demo/build/upper_body_demo', '--', '-j12', '-l12'], 'cwd': '/home/niic/upper_body_demo/build/upper_body_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'niic'), ('SSH_CLIENT', '192.168.0.61 58114 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/niic/third_party/install/lib:/home/niic/tr5-orin/ros2_ws/src/niic_ethercat_motors/libtorch/lib:/home/niic/tr5-orin/ros2_ws/src/rl_pub/libtorch/lib:/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors/lib:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces/lib:/home/niic/IMU/install/xsens_mti_ros2_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/niic'), ('OLDPWD', '/home/niic'), ('SSH_TTY', '/dev/pts/10'), ('JETSON_L4T', '36.4.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/niic/tr5-orin/ros2_ws/install:/home/niic/IMU/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'niic'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422624327093'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '52'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/niic/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('ROS_DOMAIN_ID', '53'), ('AMENT_PREFIX_PATH', '/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces:/home/niic/IMU/install/xsens_mti_ros2_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/niic/upper_body_demo/build/upper_body_demo'), ('SSH_CONNECTION', '192.168.0.61 58114 192.168.1.14 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors/local/lib/python3.10/dist-packages:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces/local/lib/python3.10/dist-packages:/home/niic/IMU/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.1'), ('CMAKE_PREFIX_PATH', '/home/niic/third_party/install:/home/niic/third_party/pinocchio:/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces:/home/niic/IMU/install/xsens_mti_ros2_driver:/opt/ros/humble')]), 'shell': False}
+[0.084304] (upper_body_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target wave_hand_demo\x1b[0m\n'}
+[0.084756] (upper_body_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target teleop\x1b[0m\n'}
+[0.099566] (-) TimerEvent: {}
+[0.121311] (upper_body_demo) StdoutLine: {'line': b'[ 40%] Built target wave_hand_demo\n'}
+[0.125245] (upper_body_demo) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o\x1b[0m\n'}
+[0.125584] (upper_body_demo) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o\x1b[0m\n'}
+[0.199712] (-) TimerEvent: {}
+[0.300213] (-) TimerEvent: {}
+[0.403091] (-) TimerEvent: {}
+[0.503610] (-) TimerEvent: {}
+[0.604122] (-) TimerEvent: {}
+[0.704616] (-) TimerEvent: {}
+[0.805100] (-) TimerEvent: {}
+[0.905613] (-) TimerEvent: {}
+[1.006107] (-) TimerEvent: {}
+[1.106633] (-) TimerEvent: {}
+[1.197149] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void armPosiSender::on_cycle()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.197536] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:60:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kctx\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[K_ctx\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.197658] (upper_body_demo) StderrLine: {'line': b'   60 |         \x1b[01;31m\x1b[Kctx\x1b[m\x1b[K.command_q_dot[_axis.joint_id] = enc2len_vel(*_axis.velocity_actual_value) + std::clamp(_ctx.target_q_dot[_axis.joint_id] - enc2len_vel(*_axis.velocity_actual_value), -_max_lin_accl, _max_lin_accl);\n'}
+[1.197753] (upper_body_demo) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.197837] (upper_body_demo) StderrLine: {'line': b'      |         \x1b[32m\x1b[K_ctx\x1b[m\x1b[K\n'}
+[1.206725] (-) TimerEvent: {}
+[1.307145] (-) TimerEvent: {}
+[1.364426] (upper_body_demo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/teleop.dir/build.make:104: CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o] Error 1\n'}
+[1.364763] (upper_body_demo) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.407286] (-) TimerEvent: {}
+[1.507876] (-) TimerEvent: {}
+[1.608384] (-) TimerEvent: {}
+[1.708874] (-) TimerEvent: {}
+[1.809391] (-) TimerEvent: {}
+[1.909883] (-) TimerEvent: {}
+[2.010377] (-) TimerEvent: {}
+[2.110871] (-) TimerEvent: {}
+[2.211379] (-) TimerEvent: {}
+[2.311874] (-) TimerEvent: {}
+[2.412390] (-) TimerEvent: {}
+[2.512877] (-) TimerEvent: {}
+[2.613368] (-) TimerEvent: {}
+[2.713863] (-) TimerEvent: {}
+[2.814370] (-) TimerEvent: {}
+[2.914848] (-) TimerEvent: {}
+[3.015334] (-) TimerEvent: {}
+[3.115844] (-) TimerEvent: {}
+[3.216354] (-) TimerEvent: {}
+[3.316852] (-) TimerEvent: {}
+[3.417343] (-) TimerEvent: {}
+[3.517847] (-) TimerEvent: {}
+[3.618346] (-) TimerEvent: {}
+[3.718853] (-) TimerEvent: {}
+[3.819343] (-) TimerEvent: {}
+[3.919856] (-) TimerEvent: {}
+[4.020348] (-) TimerEvent: {}
+[4.120869] (-) TimerEvent: {}
+[4.221386] (-) TimerEvent: {}
+[4.321872] (-) TimerEvent: {}
+[4.422389] (-) TimerEvent: {}
+[4.522876] (-) TimerEvent: {}
+[4.623396] (-) TimerEvent: {}
+[4.723894] (-) TimerEvent: {}
+[4.824399] (-) TimerEvent: {}
+[4.924895] (-) TimerEvent: {}
+[5.025394] (-) TimerEvent: {}
+[5.125894] (-) TimerEvent: {}
+[5.226402] (-) TimerEvent: {}
+[5.326888] (-) TimerEvent: {}
+[5.427398] (-) TimerEvent: {}
+[5.527889] (-) TimerEvent: {}
+[5.628401] (-) TimerEvent: {}
+[5.728869] (-) TimerEvent: {}
+[5.829383] (-) TimerEvent: {}
+[5.929864] (-) TimerEvent: {}
+[6.030374] (-) TimerEvent: {}
+[6.130865] (-) TimerEvent: {}
+[6.231372] (-) TimerEvent: {}
+[6.331887] (-) TimerEvent: {}
+[6.432394] (-) TimerEvent: {}
+[6.532969] (-) TimerEvent: {}
+[6.633498] (-) TimerEvent: {}
+[6.733997] (-) TimerEvent: {}
+[6.834495] (-) TimerEvent: {}
+[6.935006] (-) TimerEvent: {}
+[7.035543] (-) TimerEvent: {}
+[7.136053] (-) TimerEvent: {}
+[7.236540] (-) TimerEvent: {}
+[7.337032] (-) TimerEvent: {}
+[7.437531] (-) TimerEvent: {}
+[7.538037] (-) TimerEvent: {}
+[7.638553] (-) TimerEvent: {}
+[7.739073] (-) TimerEvent: {}
+[7.839595] (-) TimerEvent: {}
+[7.940087] (-) TimerEvent: {}
+[8.040600] (-) TimerEvent: {}
+[8.141084] (-) TimerEvent: {}
+[8.241582] (-) TimerEvent: {}
+[8.342079] (-) TimerEvent: {}
+[8.442592] (-) TimerEvent: {}
+[8.543084] (-) TimerEvent: {}
+[8.643590] (-) TimerEvent: {}
+[8.744075] (-) TimerEvent: {}
+[8.844558] (-) TimerEvent: {}
+[8.945048] (-) TimerEvent: {}
+[9.045542] (-) TimerEvent: {}
+[9.146030] (-) TimerEvent: {}
+[9.246508] (-) TimerEvent: {}
+[9.346982] (-) TimerEvent: {}
+[9.447481] (-) TimerEvent: {}
+[9.547966] (-) TimerEvent: {}
+[9.648563] (-) TimerEvent: {}
+[9.749058] (-) TimerEvent: {}
+[9.849575] (-) TimerEvent: {}
+[9.950074] (-) TimerEvent: {}
+[10.050564] (-) TimerEvent: {}
+[10.151061] (-) TimerEvent: {}
+[10.251563] (-) TimerEvent: {}
+[10.352047] (-) TimerEvent: {}
+[10.452569] (-) TimerEvent: {}
+[10.553067] (-) TimerEvent: {}
+[10.653565] (-) TimerEvent: {}
+[10.754070] (-) TimerEvent: {}
+[10.854579] (-) TimerEvent: {}
+[10.955063] (-) TimerEvent: {}
+[11.055574] (-) TimerEvent: {}
+[11.156062] (-) TimerEvent: {}
+[11.256571] (-) TimerEvent: {}
+[11.357087] (-) TimerEvent: {}
+[11.457592] (-) TimerEvent: {}
+[11.558136] (-) TimerEvent: {}
+[11.658629] (-) TimerEvent: {}
+[11.759113] (-) TimerEvent: {}
+[11.763075] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[11.763339] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:141:88:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<float, float>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 \x1b]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_base\x07in GCC 10.1\x1b]8;;\x07\n'}
+[11.763463] (upper_body_demo) StderrLine: {'line': b'  141 |           auto [lf, lb] = solveIK(ctx.target_q_rot[7],  ctx.target_q_rot[8], Side::Left\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[11.763560] (upper_body_demo) StderrLine: {'line': b'      |                                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[11.859247] (-) TimerEvent: {}
+[11.959742] (-) TimerEvent: {}
+[12.060217] (-) TimerEvent: {}
+[12.160717] (-) TimerEvent: {}
+[12.261217] (-) TimerEvent: {}
+[12.361713] (-) TimerEvent: {}
+[12.462199] (-) TimerEvent: {}
+[12.562693] (-) TimerEvent: {}
+[12.663205] (-) TimerEvent: {}
+[12.763711] (-) TimerEvent: {}
+[12.864195] (-) TimerEvent: {}
+[12.964692] (-) TimerEvent: {}
+[13.065189] (-) TimerEvent: {}
+[13.165692] (-) TimerEvent: {}
+[13.266181] (-) TimerEvent: {}
+[13.366670] (-) TimerEvent: {}
+[13.467151] (-) TimerEvent: {}
+[13.567678] (-) TimerEvent: {}
+[13.668160] (-) TimerEvent: {}
+[13.768616] (-) TimerEvent: {}
+[13.869094] (-) TimerEvent: {}
+[13.969588] (-) TimerEvent: {}
+[14.070077] (-) TimerEvent: {}
+[14.170575] (-) TimerEvent: {}
+[14.271054] (-) TimerEvent: {}
+[14.371545] (-) TimerEvent: {}
+[14.472052] (-) TimerEvent: {}
+[14.572555] (-) TimerEvent: {}
+[14.673041] (-) TimerEvent: {}
+[14.773544] (-) TimerEvent: {}
+[14.873991] (-) TimerEvent: {}
+[14.974485] (-) TimerEvent: {}
+[15.074974] (-) TimerEvent: {}
+[15.175468] (-) TimerEvent: {}
+[15.275967] (-) TimerEvent: {}
+[15.376451] (-) TimerEvent: {}
+[15.476932] (-) TimerEvent: {}
+[15.577414] (-) TimerEvent: {}
+[15.677893] (-) TimerEvent: {}
+[15.778389] (-) TimerEvent: {}
+[15.878880] (-) TimerEvent: {}
+[15.979381] (-) TimerEvent: {}
+[16.079865] (-) TimerEvent: {}
+[16.180346] (-) TimerEvent: {}
+[16.280820] (-) TimerEvent: {}
+[16.381293] (-) TimerEvent: {}
+[16.481805] (-) TimerEvent: {}
+[16.582311] (-) TimerEvent: {}
+[16.682859] (-) TimerEvent: {}
+[16.783371] (-) TimerEvent: {}
+[16.883856] (-) TimerEvent: {}
+[16.984337] (-) TimerEvent: {}
+[17.084830] (-) TimerEvent: {}
+[17.185319] (-) TimerEvent: {}
+[17.285815] (-) TimerEvent: {}
+[17.386308] (-) TimerEvent: {}
+[17.486802] (-) TimerEvent: {}
+[17.587274] (-) TimerEvent: {}
+[17.687778] (-) TimerEvent: {}
+[17.788278] (-) TimerEvent: {}
+[17.888778] (-) TimerEvent: {}
+[17.989267] (-) TimerEvent: {}
+[18.089761] (-) TimerEvent: {}
+[18.190233] (-) TimerEvent: {}
+[18.290746] (-) TimerEvent: {}
+[18.391229] (-) TimerEvent: {}
+[18.491737] (-) TimerEvent: {}
+[18.592236] (-) TimerEvent: {}
+[18.630087] (upper_body_demo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/teleop.dir/all] Error 2\n'}
+[18.630489] (upper_body_demo) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[18.633863] (upper_body_demo) CommandEnded: {'returncode': 2}
+[18.650080] (upper_body_demo) JobEnded: {'identifier': 'upper_body_demo', 'rc': 2}
+[18.660696] (-) EventReactorShutdown: {}

@@ -1,0 +1,66 @@
+[35m[1mConsolidate compiler generated dependencies of target wave_hand_demo[0m
+[35m[1mConsolidate compiler generated dependencies of target teleop[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/wave_hand_demo.dir/src/wavehand/WaveHandDemo.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/wave_hand_demo.dir/src/wavehand/main.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/wrist_IK_FK.cpp.o[0m
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wrist_IK_FK.cpp:[m[K In function ‘[01m[Kstd::pair<float, float> solveFK(float, float, float, float, Side)[m[K’:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wrist_IK_FK.cpp:256:101:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+  256 | std::pair<float, float> solveFK(float roll_old, float pitch_old, float f_len, float b_len, Side side[01;36m[K)[m[K{
+      |                                                                                                     [01;36m[K^[m[K
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In constructor ‘[01m[KTeleopNode::TeleopNode()[m[K’:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:123:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_state_pub_[m[K’ was not declared in this scope
+  123 |     [01;31m[Kjoint_state_pub_[m[K = this->create_publisher<sensor_msgs::msg::JointState>("joint_states", 1);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:123:47:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+  123 |     joint_state_pub_ = this->create_publisher<[01;31m[Ksensor_msgs[m[K::msg::JointState>("joint_states", 1);
+      |                                               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:123:30:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  123 |     joint_state_pub_ = this->[01;31m[Kcreate_publisher<sensor_msgs::msg::JointState>[m[K("joint_states", 1);
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:123:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTeleopNode::create_publisher<<expression error> >(const char [13], int)[m[K’
+  123 |     joint_state_pub_ = [01;31m[Kthis->create_publisher<sensor_msgs::msg::JointState>("joint_states", 1)[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:20[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:123:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  123 |     joint_state_pub_ = [01;31m[Kthis->create_publisher<sensor_msgs::msg::JointState>("joint_states", 1)[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:126:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_joint_posi_sub_[m[K’ was not declared in this scope
+  126 |     [01;31m[Ktarget_joint_posi_sub_[m[K = this->create_subscription<sensor_msgs::msg::JointState>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:126:36:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  126 |     target_joint_posi_sub_ = this->[01;31m[Kcreate_subscription<sensor_msgs::msg::JointState>[m[K(
+      |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:128:20:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+  128 |       [this](const [01;31m[Ksensor_msgs[m[K::msg::JointState::SharedPtr msg) {
+      |                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:152:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+  152 |       })[01;31m[K;[m[K
+      |         [01;31m[K^[m[K
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In constructor ‘[01m[KTeleopNode::TeleopNode()[m[K’:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:152:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:126:85:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  126 |     target_joint_posi_sub_ = this->create_subscription<sensor_msgs::msg::JointState>[01;36m[K([m[K
+      |                                                                                     [01;36m[K^[m[K
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:263:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kfor[m[K’
+  263 |       [01;31m[Kfor[m[K (auto &j : joints) { (*j)(); }
+      |       [01;31m[K^~~[m[K
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:266:98:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+  266 |       auto [roll, pitch] = solveFK(ctx.q_rot[7],  ctx.q_rot[8],  ctx.q[7],  ctx.q[8],  Side::Left[01;36m[K)[m[K;
+      |                                                                                                  [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/teleop.dir/build.make:76: CMakeFiles/teleop.dir/src/teleop/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/teleop.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 60%] [32m[1mLinking CXX executable wave_hand_demo[0m
+[ 70%] Built target wave_hand_demo
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,44 @@
+[0.015s] Invoking command in '/home/niic/upper_body_demo/build/upper_body_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target teleop[0m
+[0.108s] [ 16%] Built target enable
+[0.111s] [ 50%] Built target wave_hand_demo
+[0.130s] [ 58%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/udp_tool.cpp.o[0m
+[0.131s] [ 66%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o[0m
+[0.146s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/udp_tool.cpp:2:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[0.146s]     2 | #pragma [01;35m[Konce[m[K
+[0.146s]       |         [01;35m[K^~~~[m[K
+[7.474s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In constructor ‘[01m[KTeleopNode::TeleopNode()[m[K’:
+[7.474s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:213:40:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function ‘[01m[Kint init_broadcast_socket(sockaddr_in*)[m[K’
+[7.474s]   213 |     int sockfd_ = [01;31m[Kinit_broadcast_socket(&dest_addr, "192.168.0.255", 12345)[m[K;
+[7.474s]       |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.474s] In file included from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:8[m[K:
+[7.475s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/../udp_tool.hpp:8:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[7.475s]     8 | int [01;36m[Kinit_broadcast_socket[m[K(struct sockaddr_in *broadcast_addr);
+[7.475s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[7.504s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[7.504s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:300:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksockfd_[m[K’ is not captured
+[7.504s]   300 |             [01;31m[Ksockfd_[m[K,
+[7.504s]       |             [01;31m[K^~~~~~~[m[K
+[7.504s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:285:38:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[7.504s]   285 |     task_->set_receive_callback([this[01;36m[K][m[K {
+[7.504s]       |                                      [01;36m[K^[m[K
+[7.504s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:213:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint sockfd_[m[K’ declared here
+[7.504s]   213 |     int [01;36m[Ksockfd_[m[K = init_broadcast_socket(&dest_addr, "192.168.0.255", 12345);
+[7.504s]       |         [01;36m[K^~~~~~~[m[K
+[7.504s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:304:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kdest_addr[m[K’ is not captured
+[7.505s]   304 |             reinterpret_cast<const sockaddr*>(&[01;31m[Kdest_addr[m[K),
+[7.505s]       |                                                [01;31m[K^~~~~~~~~[m[K
+[7.505s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:285:38:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[7.505s]   285 |     task_->set_receive_callback([this[01;36m[K][m[K {
+[7.505s]       |                                      [01;36m[K^[m[K
+[7.505s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:212:17:[m[K [01;36m[Knote: [m[K‘[01m[Ksockaddr_in dest_addr[m[K’ declared here
+[7.505s]   212 |     sockaddr_in [01;36m[Kdest_addr[m[K{};
+[7.505s]       |                 [01;36m[K^~~~~~~~~[m[K
+[13.285s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[13.285s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:152:88:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[13.285s]   152 |           auto [lf, lb] = solveIK(ctx.target_q_rot[7],  ctx.target_q_rot[8], Side::Left[01;36m[K)[m[K;
+[13.285s]       |                                                                                        [01;36m[K^[m[K
+[13.755s] gmake[2]: *** [CMakeFiles/teleop.dir/build.make:76: CMakeFiles/teleop.dir/src/teleop/main.cpp.o] Error 1
+[13.757s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/teleop.dir/all] Error 2
+[13.757s] gmake: *** [Makefile:146: all] Error 2
+[13.761s] Invoked command in '/home/niic/upper_body_demo/build/upper_body_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12

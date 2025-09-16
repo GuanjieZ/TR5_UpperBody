@@ -1,0 +1,12 @@
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:190:60:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::array<std::__cxx11::basic_string<char>, 16>::value_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kuint16_t[m[K’ {aka ‘[01m[Kshort unsigned int[m[K’} in assignment
+  190 |             axis->joint_name= ctx.joint_name[axis->joint_id[01;31m[K][m[K;
+      |                                                            [01;31m[K^[m[K
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:224:98:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+  224 |       auto [roll, pitch] = solveFK(ctx.q_rot[7],  ctx.q_rot[8],  ctx.q[7],  ctx.q[8],  Side::Left[01;36m[K)[m[K;
+      |                                                                                                  [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/teleop.dir/build.make:76: CMakeFiles/teleop.dir/src/teleop/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/teleop.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

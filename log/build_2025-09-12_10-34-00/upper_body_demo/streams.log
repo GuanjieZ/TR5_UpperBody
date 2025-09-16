@@ -1,0 +1,45 @@
+[0.421s] Invoking command in '/home/niic/upper_body_demo/build/upper_body_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12
+[0.491s] [35m[1mConsolidate compiler generated dependencies of target wave_hand_demo[0m
+[0.493s] [35m[1mConsolidate compiler generated dependencies of target teleop[0m
+[0.510s] [ 16%] Built target enable
+[0.531s] [ 33%] [32mBuilding CXX object CMakeFiles/wave_hand_demo.dir/src/wavehand/WaveHandDemo.cpp.o[0m
+[0.532s] [ 33%] [32mBuilding CXX object CMakeFiles/wave_hand_demo.dir/src/wavehand/main.cpp.o[0m
+[0.538s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o[0m
+[0.538s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o[0m
+[1.010s] In file included from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/WaveHandDemo.hpp:5[m[K,
+[1.010s]                  from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/WaveHandDemo.cpp:2[m[K:
+[1.010s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/../CtrlContext.hpp:41:109:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.010s]    41 |                                            -0.09292, -0.78706, -0.00749, 0.94108, 0.00470, 6.63745, 16.88646[01;31m[K}[m[K
+[1.010s]       |                                                                                                             [01;31m[K^[m[K
+[1.010s]       |                                                                                                              [32m[K;[m[K
+[1.010s] In file included from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.hpp:5[m[K,
+[1.010s]                  from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:2[m[K:
+[1.010s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/../CtrlContext.hpp:41:109:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.011s]    41 |                                            -0.09292, -0.78706, -0.00749, 0.94108, 0.00470, 6.63745, 16.88646[01;31m[K}[m[K
+[1.011s]       |                                                                                                             [01;31m[K^[m[K
+[1.011s]       |                                                                                                              [32m[K;[m[K
+[2.079s] gmake[2]: *** [CMakeFiles/teleop.dir/build.make:104: CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o] Error 1
+[2.079s] gmake[2]: *** Waiting for unfinished jobs....
+[2.119s] gmake[2]: *** [CMakeFiles/wave_hand_demo.dir/build.make:104: CMakeFiles/wave_hand_demo.dir/src/wavehand/WaveHandDemo.cpp.o] Error 1
+[2.120s] gmake[2]: *** Waiting for unfinished jobs....
+[2.782s] In file included from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:5[m[K:
+[2.783s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/../CtrlContext.hpp:41:109:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.783s]    41 |                                            -0.09292, -0.78706, -0.00749, 0.94108, 0.00470, 6.63745, 16.88646[01;31m[K}[m[K
+[2.783s]       |                                                                                                             [01;31m[K^[m[K
+[2.783s]       |                                                                                                              [32m[K;[m[K
+[5.072s] In file included from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/main.cpp:7[m[K:
+[5.072s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/../CtrlContext.hpp:41:109:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[5.072s]    41 |                                            -0.09292, -0.78706, -0.00749, 0.94108, 0.00470, 6.63745, 16.88646[01;31m[K}[m[K
+[5.072s]       |                                                                                                             [01;31m[K^[m[K
+[5.072s]       |                                                                                                              [32m[K;[m[K
+[8.110s] gmake[2]: *** [CMakeFiles/wave_hand_demo.dir/build.make:76: CMakeFiles/wave_hand_demo.dir/src/wavehand/main.cpp.o] Error 1
+[8.111s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/wave_hand_demo.dir/all] Error 2
+[8.111s] gmake[1]: *** Waiting for unfinished jobs....
+[13.199s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[13.199s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:152:88:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[13.199s]   152 |           auto [lf, lb] = solveIK(ctx.target_q_rot[7],  ctx.target_q_rot[8], Side::Left[01;36m[K)[m[K;
+[13.199s]       |                                                                                        [01;36m[K^[m[K
+[13.652s] gmake[2]: *** [CMakeFiles/teleop.dir/build.make:76: CMakeFiles/teleop.dir/src/teleop/main.cpp.o] Error 1
+[13.652s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/teleop.dir/all] Error 2
+[13.653s] gmake: *** [Makefile:146: all] Error 2
+[13.656s] Invoked command in '/home/niic/upper_body_demo/build/upper_body_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12

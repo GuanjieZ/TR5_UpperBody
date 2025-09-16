@@ -1,0 +1,16 @@
+2025-09-10T21:01:12.728693Z[INFO][src/python/py_mod.rs:25] bc_stark_sdk version: 0.8.8
+2025-09-10T21:01:12.729832Z[INFO][src/stark/config.rs:30] Logging initialized with level: Info
+2025-09-10T21:01:12.730062Z[INFO][src/stark/config.rs:36] StarkSDK initialized, protocol_type: Modbus
+2025-09-10T21:01:12.863130Z[WARNING][src/serial/base.rs:47] enable_low_latency failed: Os { code: 25, kind: Uncategorized, message: "Inappropriate ioctl for device" }
+2025-09-10T21:01:12.865665Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid CRC: expected = 0x022C, actual = 0xE163
+2025-09-10T21:01:12.865943Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x00
+2025-09-10T21:01:12.964264Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 0/3
+2025-09-10T21:01:12.966296Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid CRC: expected = 0x022C, actual = 0xE163
+2025-09-10T21:01:12.966458Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x00
+2025-09-10T21:01:13.065776Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 1/3
+2025-09-10T21:01:13.067678Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid CRC: expected = 0x022C, actual = 0xE163
+2025-09-10T21:01:13.067846Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x00
+2025-09-10T21:01:13.167137Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 2/3
+2025-09-10T21:01:13.167334Z[INFO][src/python/py_device.rs:154] Error getting device info: Failed, slave[126] read_holding_registers(address: 901, count: 1) failed after 3 attempts
+2025-09-10T21:01:13.167671Z[CRITICAL][/home/niic/upper_body_demo/build/dex_hand/dex_hand/trigger.py:90] Exception in get_device_info: Error getting device info: Failed, slave[126] read_holding_registers(address: 901, count: 1) failed after 3 attempts
+2025-09-10T21:01:13.167890Z[CRITICAL][/home/niic/upper_body_demo/build/dex_hand/dex_hand/trigger.py:95] Failed to get device info. Id: 126

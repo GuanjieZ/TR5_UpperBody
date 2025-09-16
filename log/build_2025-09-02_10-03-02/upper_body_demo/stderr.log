@@ -1,0 +1,14 @@
+In file included from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/WaveHandDemo.cpp:2[m[K:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/WaveHandDemo.hpp:4:10:[m[K [01;31m[Kfatal error: [m[KIController.hpp: No such file or directory
+    4 | #include [01;31m[K"IController.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/wave_hand_demo.dir/build.make:104: CMakeFiles/wave_hand_demo.dir/src/wavehand/WaveHandDemo.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/main.cpp:8:10:[m[K [01;31m[Kfatal error: [m[K../Joint.hpp: No such file or directory
+    8 | #include [01;31m[K"../Joint.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/wave_hand_demo.dir/build.make:76: CMakeFiles/wave_hand_demo.dir/src/wavehand/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wave_hand_demo.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,216 @@
+[0.159s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.159s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff9450caf0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9450c4f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9450c4f0>>)
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.424s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/niic/upper_body_demo'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'ignore_ament_install'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['colcon_pkg']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'colcon_pkg'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['colcon_meta']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'colcon_meta'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['ros']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'ros'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['cmake', 'python']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'cmake'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'python'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extensions ['python_setup_py']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(logs) by extension 'python_setup_py'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dex_hand) by extensions ['ignore', 'ignore_ament_install']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dex_hand) by extension 'ignore'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dex_hand) by extension 'ignore_ament_install'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dex_hand) by extensions ['colcon_pkg']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dex_hand) by extension 'colcon_pkg'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dex_hand) by extensions ['colcon_meta']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dex_hand) by extension 'colcon_meta'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dex_hand) by extensions ['ros']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(src/dex_hand) by extension 'ros'
+[0.449s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dex_hand' with type 'ros.ament_python' and name 'dex_hand'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/upper_body_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/upper_body_demo) by extension 'ignore'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/upper_body_demo) by extension 'ignore_ament_install'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/upper_body_demo) by extensions ['colcon_pkg']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/upper_body_demo) by extension 'colcon_pkg'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/upper_body_demo) by extensions ['colcon_meta']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/upper_body_demo) by extension 'colcon_meta'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/upper_body_demo) by extensions ['ros']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/upper_body_demo) by extension 'ros'
+[0.452s] DEBUG:colcon.colcon_core.package_identification:Package 'src/upper_body_demo' with type 'ros.ament_cmake' and name 'upper_body_demo'
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.452s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.501s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.501s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.504s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/niic/tr5-orin/ros2_ws/install
+[0.504s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/niic/IMU/install
+[0.506s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 276 installed packages in /opt/ros/humble
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.560s] Level 5:colcon.colcon_core.verb:set package 'dex_hand' build argument 'cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'dex_hand' build argument 'cmake_target' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'dex_hand' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'dex_hand' build argument 'cmake_clean_cache' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'dex_hand' build argument 'cmake_clean_first' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'dex_hand' build argument 'cmake_force_configure' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'dex_hand' build argument 'ament_cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'dex_hand' build argument 'catkin_cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'dex_hand' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.561s] DEBUG:colcon.colcon_core.verb:Building package 'dex_hand' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niic/upper_body_demo/build/dex_hand', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niic/upper_body_demo/install/dex_hand', 'merge_install': False, 'path': '/home/niic/upper_body_demo/src/dex_hand', 'symlink_install': False, 'test_result_base': None}
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'upper_body_demo' build argument 'cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'upper_body_demo' build argument 'cmake_target' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'upper_body_demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'upper_body_demo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'upper_body_demo' build argument 'cmake_clean_first' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'upper_body_demo' build argument 'cmake_force_configure' from command line to 'False'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'upper_body_demo' build argument 'ament_cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'upper_body_demo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.562s] Level 5:colcon.colcon_core.verb:set package 'upper_body_demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.562s] DEBUG:colcon.colcon_core.verb:Building package 'upper_body_demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niic/upper_body_demo/build/upper_body_demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niic/upper_body_demo/install/upper_body_demo', 'merge_install': False, 'path': '/home/niic/upper_body_demo/src/upper_body_demo', 'symlink_install': False, 'test_result_base': None}
+[0.562s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.564s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.564s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/niic/upper_body_demo/src/dex_hand' with build type 'ament_python'
+[0.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('dex_hand', 'ament_prefix_path')
+[0.567s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/upper_body_demo/install/dex_hand/share/dex_hand/hook/ament_prefix_path.ps1'
+[0.568s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niic/upper_body_demo/install/dex_hand/share/dex_hand/hook/ament_prefix_path.dsv'
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/upper_body_demo/install/dex_hand/share/dex_hand/hook/ament_prefix_path.sh'
+[0.570s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.570s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.575s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niic/upper_body_demo/src/upper_body_demo' with build type 'ament_cmake'
+[0.575s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niic/upper_body_demo/src/upper_body_demo'
+[0.576s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.576s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.983s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/niic/upper_body_demo/src/dex_hand'
+[0.984s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.984s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.994s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niic/upper_body_demo/build/upper_body_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12
+[1.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niic/upper_body_demo/src/dex_hand': PYTHONPATH=/home/niic/upper_body_demo/build/dex_hand/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dex_hand build --build-base /home/niic/upper_body_demo/build/dex_hand/build install --record /home/niic/upper_body_demo/build/dex_hand/install.log --single-version-externally-managed install_data
+[2.026s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niic/upper_body_demo/src/dex_hand' returned '0': PYTHONPATH=/home/niic/upper_body_demo/build/dex_hand/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dex_hand build --build-base /home/niic/upper_body_demo/build/dex_hand/build install --record /home/niic/upper_body_demo/build/dex_hand/install.log --single-version-externally-managed install_data
+[2.030s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/dex_hand' for CMake module files
+[2.030s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/dex_hand' for CMake config files
+[2.031s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/dex_hand/lib'
+[2.032s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/dex_hand/bin'
+[2.032s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/dex_hand/lib/pkgconfig/dex_hand.pc'
+[2.032s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages'
+[2.032s] Level 1:colcon.colcon_core.shell:create_environment_hook('dex_hand', 'pythonpath')
+[2.033s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/upper_body_demo/install/dex_hand/share/dex_hand/hook/pythonpath.ps1'
+[2.034s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niic/upper_body_demo/install/dex_hand/share/dex_hand/hook/pythonpath.dsv'
+[2.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/upper_body_demo/install/dex_hand/share/dex_hand/hook/pythonpath.sh'
+[2.035s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/dex_hand/bin'
+[2.035s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dex_hand)
+[2.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/upper_body_demo/install/dex_hand/share/dex_hand/package.ps1'
+[2.037s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niic/upper_body_demo/install/dex_hand/share/dex_hand/package.dsv'
+[2.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/upper_body_demo/install/dex_hand/share/dex_hand/package.sh'
+[2.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/upper_body_demo/install/dex_hand/share/dex_hand/package.bash'
+[2.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/upper_body_demo/install/dex_hand/share/dex_hand/package.zsh'
+[2.040s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niic/upper_body_demo/install/dex_hand/share/colcon-core/packages/dex_hand)
+[5.291s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niic/upper_body_demo/build/upper_body_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12
+[5.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niic/upper_body_demo/build/upper_body_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/niic/upper_body_demo/build/upper_body_demo
+[5.338s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(upper_body_demo)
+[5.339s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo' for CMake module files
+[5.340s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo' for CMake config files
+[5.341s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niic/upper_body_demo/build/upper_body_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/niic/upper_body_demo/build/upper_body_demo
+[5.342s] Level 1:colcon.colcon_core.shell:create_environment_hook('upper_body_demo', 'cmake_prefix_path')
+[5.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/hook/cmake_prefix_path.ps1'
+[5.343s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/hook/cmake_prefix_path.dsv'
+[5.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/hook/cmake_prefix_path.sh'
+[5.344s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo/lib'
+[5.345s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo/bin'
+[5.345s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo/lib/pkgconfig/upper_body_demo.pc'
+[5.345s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo/lib/python3.10/site-packages'
+[5.345s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo/bin'
+[5.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.ps1'
+[5.346s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.dsv'
+[5.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.sh'
+[5.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.bash'
+[5.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.zsh'
+[5.349s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niic/upper_body_demo/install/upper_body_demo/share/colcon-core/packages/upper_body_demo)
+[5.349s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(upper_body_demo)
+[5.350s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo' for CMake module files
+[5.350s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo' for CMake config files
+[5.351s] Level 1:colcon.colcon_core.shell:create_environment_hook('upper_body_demo', 'cmake_prefix_path')
+[5.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/hook/cmake_prefix_path.ps1'
+[5.352s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/hook/cmake_prefix_path.dsv'
+[5.352s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/hook/cmake_prefix_path.sh'
+[5.353s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo/lib'
+[5.353s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo/bin'
+[5.353s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo/lib/pkgconfig/upper_body_demo.pc'
+[5.353s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo/lib/python3.10/site-packages'
+[5.354s] Level 1:colcon.colcon_core.environment:checking '/home/niic/upper_body_demo/install/upper_body_demo/bin'
+[5.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.ps1'
+[5.355s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.dsv'
+[5.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.sh'
+[5.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.bash'
+[5.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.zsh'
+[5.358s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niic/upper_body_demo/install/upper_body_demo/share/colcon-core/packages/upper_body_demo)
+[5.358s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.358s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.359s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.359s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.366s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.366s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.366s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.384s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.Notifications exited with status 1
+[5.384s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.385s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niic/upper_body_demo/install/local_setup.ps1'
+[5.386s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/niic/upper_body_demo/install/_local_setup_util_ps1.py'
+[5.388s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niic/upper_body_demo/install/setup.ps1'
+[5.390s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niic/upper_body_demo/install/local_setup.sh'
+[5.391s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/niic/upper_body_demo/install/_local_setup_util_sh.py'
+[5.391s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niic/upper_body_demo/install/setup.sh'
+[5.393s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niic/upper_body_demo/install/local_setup.bash'
+[5.394s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niic/upper_body_demo/install/setup.bash'
+[5.395s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niic/upper_body_demo/install/local_setup.zsh'
+[5.396s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niic/upper_body_demo/install/setup.zsh'

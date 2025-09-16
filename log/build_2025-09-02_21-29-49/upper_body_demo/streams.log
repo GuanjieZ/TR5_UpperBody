@@ -1,0 +1,37 @@
+[0.013s] Invoking command in '/home/niic/upper_body_demo/build/upper_body_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/niic/upper_body_demo/src/upper_body_demo -DCMAKE_INSTALL_PREFIX=/home/niic/upper_body_demo/install/upper_body_demo
+[0.099s] -- The CXX compiler identification is GNU 11.4.0
+[0.109s] -- Detecting CXX compiler ABI info
+[0.215s] -- Detecting CXX compiler ABI info - done
+[0.223s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.224s] -- Detecting CXX compile features
+[0.224s] -- Detecting CXX compile features - done
+[0.227s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.442s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.570s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.626s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.633s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.644s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.660s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.682s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.741s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.744s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.853s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.887s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.939s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.951s] -- Looking for C++ include pthread.h
+[1.063s] -- Looking for C++ include pthread.h - found
+[1.063s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.178s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.179s] -- Found Threads: TRUE  
+[1.257s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: program_options 
+[1.278s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  
+[1.285s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[1.285s]   ament_target_dependencies() the passed package name 'sensor_msgs' was not
+[1.285s]   found before
+[1.285s] Call Stack (most recent call first):
+[1.286s]   CMakeLists.txt:74 (ament_target_dependencies)
+[1.286s] 
+[1.286s] [0m
+[1.286s] -- Configuring incomplete, errors occurred!
+[1.286s] See also "/home/niic/upper_body_demo/build/upper_body_demo/CMakeFiles/CMakeOutput.log".
+[1.300s] Invoked command in '/home/niic/upper_body_demo/build/upper_body_demo' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/niic/upper_body_demo/src/upper_body_demo -DCMAKE_INSTALL_PREFIX=/home/niic/upper_body_demo/install/upper_body_demo

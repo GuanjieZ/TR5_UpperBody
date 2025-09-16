@@ -1,0 +1,5 @@
+2025-09-15T18:54:44.644288Z[INFO][src/python/py_mod.rs:25] bc_stark_sdk version: 0.8.8
+2025-09-15T18:54:44.645514Z[INFO][src/stark/config.rs:30] Logging initialized with level: Info
+2025-09-15T18:54:44.645766Z[INFO][src/stark/config.rs:36] StarkSDK initialized, protocol_type: Modbus
+2025-09-15T18:54:44.779787Z[ERROR][src/python/py_mod.rs:215] Failed to open Modbus: No such file or directory
+2025-09-15T18:54:44.780443Z[CRITICAL][/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/trigger.py:93] Exception while opening serial port: Failed to open Modbus context: No such file or directory

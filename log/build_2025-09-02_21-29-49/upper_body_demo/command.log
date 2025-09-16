@@ -1,0 +1,2 @@
+Invoking command in '/home/niic/upper_body_demo/build/upper_body_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/niic/upper_body_demo/src/upper_body_demo -DCMAKE_INSTALL_PREFIX=/home/niic/upper_body_demo/install/upper_body_demo
+Invoked command in '/home/niic/upper_body_demo/build/upper_body_demo' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/niic/upper_body_demo/src/upper_body_demo -DCMAKE_INSTALL_PREFIX=/home/niic/upper_body_demo/install/upper_body_demo

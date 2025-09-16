@@ -1,0 +1,7 @@
+2025-09-10T21:09:23.708452Z[INFO][src/python/py_mod.rs:25] bc_stark_sdk version: 0.8.8
+2025-09-10T21:09:23.709551Z[INFO][src/stark/config.rs:30] Logging initialized with level: Info
+2025-09-10T21:09:23.709803Z[INFO][src/stark/config.rs:36] StarkSDK initialized, protocol_type: Modbus
+2025-09-10T21:09:23.839578Z[WARNING][src/serial/base.rs:47] enable_low_latency failed: Os { code: 25, kind: Uncategorized, message: "Inappropriate ioctl for device" }
+2025-09-10T21:09:23.946929Z[INFO][/home/niic/upper_body_demo/build/dex_hand/dex_hand/trigger.py:101] Left: DeviceInfo { sku_type: MediumLeft, serial_number: BCXRL2146J2500005, firmware_version: 0.0.10 }
+2025-09-10T21:09:33.458324Z[ERROR][/usr/lib/python3.10/asyncio/base_events.py:1758] Task was destroyed but it is pending!
+task: <Task pending name='revo2_run_task' coro=<Revo2Node._async_setup_and_run() running at /home/niic/upper_body_demo/build/dex_hand/dex_hand/trigger.py:128> wait_for=<Future cancelled> cb=[Task.task_wakeup(), gather.<locals>._done_callback() at /usr/lib/python3.10/asyncio/tasks.py:720]>

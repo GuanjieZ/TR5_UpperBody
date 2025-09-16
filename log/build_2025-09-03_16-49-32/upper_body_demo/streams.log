@@ -1,0 +1,16 @@
+[0.016s] Invoking command in '/home/niic/upper_body_demo/build/upper_body_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12
+[0.080s] [35m[1mConsolidate compiler generated dependencies of target teleop[0m
+[0.103s] [ 40%] Built target wave_hand_demo
+[0.121s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o[0m
+[7.067s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[7.067s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:163:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<std_msgs::msg::Bool_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[7.067s]   163 |         ctx.enable_flags.fill(msg.[01;31m[Kdata[m[K);
+[7.067s]       |                                   [01;31m[K^~~~[m[K
+[12.750s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[12.750s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:146:88:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[12.750s]   146 |           auto [lf, lb] = solveIK(ctx.target_q_rot[7],  ctx.target_q_rot[8], Side::Left[01;36m[K)[m[K;
+[12.750s]       |                                                                                        [01;36m[K^[m[K
+[13.274s] gmake[2]: *** [CMakeFiles/teleop.dir/build.make:76: CMakeFiles/teleop.dir/src/teleop/main.cpp.o] Error 1
+[13.274s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/teleop.dir/all] Error 2
+[13.274s] gmake: *** [Makefile:146: all] Error 2
+[13.278s] Invoked command in '/home/niic/upper_body_demo/build/upper_body_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12

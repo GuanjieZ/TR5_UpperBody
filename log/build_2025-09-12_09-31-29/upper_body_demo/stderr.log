@@ -1,0 +1,32 @@
+In file included from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.hpp:5[m[K,
+                 from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:2[m[K:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/../CtrlContext.hpp:45:77:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+   45 |                                           1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,[01;31m[K,[m[K
+      |                                                                             [01;31m[K^[m[K
+In file included from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/WaveHandDemo.hpp:5[m[K,
+                 from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/WaveHandDemo.cpp:2[m[K:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/../CtrlContext.hpp:45:77:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+   45 |                                           1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,[01;31m[K,[m[K
+      |                                                                             [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/teleop.dir/build.make:104: CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/wave_hand_demo.dir/build.make:104: CMakeFiles/wave_hand_demo.dir/src/wavehand/WaveHandDemo.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:5[m[K:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/../CtrlContext.hpp:45:77:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+   45 |                                           1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,[01;31m[K,[m[K
+      |                                                                             [01;31m[K^[m[K
+In file included from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/main.cpp:7[m[K:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wavehand/../CtrlContext.hpp:45:77:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+   45 |                                           1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,[01;31m[K,[m[K
+      |                                                                             [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/wave_hand_demo.dir/build.make:76: CMakeFiles/wave_hand_demo.dir/src/wavehand/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/wave_hand_demo.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:152:88:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+  152 |           auto [lf, lb] = solveIK(ctx.target_q_rot[7],  ctx.target_q_rot[8], Side::Left[01;36m[K)[m[K;
+      |                                                                                        [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/teleop.dir/build.make:76: CMakeFiles/teleop.dir/src/teleop/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/teleop.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

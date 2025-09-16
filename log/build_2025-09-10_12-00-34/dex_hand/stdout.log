@@ -1,0 +1,38 @@
+running develop
+Removing /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex-hand.egg-link (link to .)
+running egg_info
+writing ../../build/dex_hand/dex_hand.egg-info/PKG-INFO
+writing dependency_links to ../../build/dex_hand/dex_hand.egg-info/dependency_links.txt
+writing entry points to ../../build/dex_hand/dex_hand.egg-info/entry_points.txt
+writing requirements to ../../build/dex_hand/dex_hand.egg-info/requires.txt
+writing top-level names to ../../build/dex_hand/dex_hand.egg-info/top_level.txt
+reading manifest file '../../build/dex_hand/dex_hand.egg-info/SOURCES.txt'
+writing manifest file '../../build/dex_hand/dex_hand.egg-info/SOURCES.txt'
+running build
+running build_py
+copying dex_hand/revo2_utils.py -> /home/niic/upper_body_demo/build/dex_hand/build/lib/dex_hand
+copying dex_hand/trigger.py -> /home/niic/upper_body_demo/build/dex_hand/build/lib/dex_hand
+copying dex_hand/__init__.py -> /home/niic/upper_body_demo/build/dex_hand/build/lib/dex_hand
+copying dex_hand/utils.py -> /home/niic/upper_body_demo/build/dex_hand/build/lib/dex_hand
+copying dex_hand/logger.py -> /home/niic/upper_body_demo/build/dex_hand/build/lib/dex_hand
+running install
+running install_lib
+creating /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand
+copying /home/niic/upper_body_demo/build/dex_hand/build/lib/dex_hand/revo2_utils.py -> /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand
+copying /home/niic/upper_body_demo/build/dex_hand/build/lib/dex_hand/trigger.py -> /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand
+copying /home/niic/upper_body_demo/build/dex_hand/build/lib/dex_hand/__init__.py -> /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand
+copying /home/niic/upper_body_demo/build/dex_hand/build/lib/dex_hand/utils.py -> /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand
+copying /home/niic/upper_body_demo/build/dex_hand/build/lib/dex_hand/logger.py -> /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand
+byte-compiling /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/revo2_utils.py to revo2_utils.cpython-310.pyc
+byte-compiling /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/trigger.py to trigger.cpython-310.pyc
+byte-compiling /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/utils.py to utils.cpython-310.pyc
+byte-compiling /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/logger.py to logger.cpython-310.pyc
+running install_data
+copying resource/dex_hand -> /home/niic/upper_body_demo/install/dex_hand/share/ament_index/resource_index/packages
+copying package.xml -> /home/niic/upper_body_demo/install/dex_hand/share/dex_hand
+running install_egg_info
+Copying ../../build/dex_hand/dex_hand.egg-info to /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info
+running install_scripts
+Installing trigger script to /home/niic/upper_body_demo/install/dex_hand/lib/dex_hand
+writing list of installed files to '/home/niic/upper_body_demo/build/dex_hand/install.log'

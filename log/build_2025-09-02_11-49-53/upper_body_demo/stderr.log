@@ -1,0 +1,15 @@
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/wrist_IK_FK.cpp:8:10:[m[K [01;31m[Kfatal error: [m[KEigen/Core: No such file or directory
+    8 | #include [01;31m[K<Eigen/Core>[m[K
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/teleop.dir/build.make:118: CMakeFiles/teleop.dir/src/wrist_IK_FK.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:6[m[K:
+[01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/Joint.hpp:3:10:[m[K [01;31m[Kfatal error: [m[Kaxis.hpp: No such file or directory
+    3 | #include [01;31m[K"axis.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/teleop.dir/build.make:76: CMakeFiles/teleop.dir/src/teleop/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/teleop.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

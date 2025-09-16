@@ -1,0 +1,10 @@
+2025-09-10T21:09:55.368433Z[INFO][src/python/py_mod.rs:25] bc_stark_sdk version: 0.8.8
+2025-09-10T21:09:55.369550Z[INFO][src/stark/config.rs:30] Logging initialized with level: Info
+2025-09-10T21:09:55.369790Z[INFO][src/stark/config.rs:36] StarkSDK initialized, protocol_type: Modbus
+2025-09-10T21:09:55.499942Z[WARNING][src/serial/base.rs:47] enable_low_latency failed: Os { code: 25, kind: Uncategorized, message: "Inappropriate ioctl for device" }
+2025-09-10T21:09:55.607278Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid CRC: expected = 0x8A82, actual = 0x9EB5
+2025-09-10T21:09:55.705904Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_input_registers(address: 3000, count: 10) timeout, retry 0/3
+2025-09-10T21:09:55.708433Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:72] Successfully decoded frame after dropping 1 byte(s): [BF]
+2025-09-10T21:09:55.708866Z[INFO][/home/niic/upper_body_demo/build/dex_hand/dex_hand/trigger.py:101] Left: DeviceInfo { sku_type: MediumLeft, serial_number: BCXRL2146J2500005, firmware_version: 0.0.10 }
+2025-09-10T21:10:06.625589Z[ERROR][/usr/lib/python3.10/asyncio/base_events.py:1758] Task was destroyed but it is pending!
+task: <Task pending name='revo2_run_task' coro=<Revo2Node._async_setup_and_run() running at /home/niic/upper_body_demo/build/dex_hand/dex_hand/trigger.py:128> wait_for=<Future cancelled> cb=[Task.task_wakeup(), gather.<locals>._done_callback() at /usr/lib/python3.10/asyncio/tasks.py:720]>

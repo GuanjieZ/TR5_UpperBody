@@ -1,0 +1,40 @@
+2025-09-10T21:57:46.747587Z[INFO][src/python/py_mod.rs:25] bc_stark_sdk version: 0.8.8
+2025-09-10T21:57:46.748717Z[INFO][src/stark/config.rs:30] Logging initialized with level: Info
+2025-09-10T21:57:46.748959Z[INFO][src/stark/config.rs:36] StarkSDK initialized, protocol_type: Modbus
+2025-09-10T21:57:46.880749Z[WARNING][src/serial/base.rs:47] enable_low_latency failed: Os { code: 25, kind: Uncategorized, message: "Inappropriate ioctl for device" }
+2025-09-10T21:57:47.884647Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x20
+2025-09-10T21:57:47.885131Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x20
+2025-09-10T21:57:47.984488Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 0/3
+2025-09-10T21:57:47.986450Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid CRC: expected = 0x022C, actual = 0xE163
+2025-09-10T21:57:47.986613Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x00
+2025-09-10T21:57:48.086024Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 1/3
+2025-09-10T21:57:48.088168Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:72] Successfully decoded frame after dropping 4 byte(s): [BF, 20, D, 2]
+2025-09-10T21:57:48.090604Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid CRC: expected = 0x31C9, actual = 0x8E4E
+2025-09-10T21:57:48.090756Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid CRC: expected = 0x6149, actual = 0xDC50
+2025-09-10T21:57:48.090905Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x0D
+2025-09-10T21:57:48.091033Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x61
+2025-09-10T21:57:48.091154Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x49
+2025-09-10T21:57:48.091272Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x31
+2025-09-10T21:57:48.091388Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0xC9
+2025-09-10T21:57:48.091508Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x31
+2025-09-10T21:57:48.091628Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x34
+2025-09-10T21:57:48.091749Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x36
+2025-09-10T21:57:48.091877Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x4A
+2025-09-10T21:57:48.091995Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x32
+2025-09-10T21:57:48.092139Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x35
+2025-09-10T21:57:48.092260Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x30
+2025-09-10T21:57:48.092378Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x30
+2025-09-10T21:57:48.092496Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x30
+2025-09-10T21:57:48.092614Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x30
+2025-09-10T21:57:48.092730Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x35
+2025-09-10T21:57:48.092862Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x00
+2025-09-10T21:57:48.092987Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x00
+2025-09-10T21:57:48.093104Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:265] Failed to decode response frame: Invalid function code: 0x00
+2025-09-10T21:57:48.189367Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_input_registers(address: 3010, count: 10) timeout, retry 0/3
+2025-09-10T21:57:48.191753Z[WARNING][/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-modbus-0.16.1/src/codec/rtu.rs:72] Successfully decoded frame after dropping 21 byte(s): [BF, 10, 91, D, 61, 49, 31, C9, 31, 34, 36, 4A, 32, 35, 30, 30, 30, 30, 35, 0, 0]
+2025-09-10T21:57:48.194404Z[INFO][/home/niic/upper_body_demo/build/dex_hand/dex_hand/trigger.py:104] Left: DeviceInfo { sku_type: MediumLeft, serial_number: BCXRL2146J2500005, firmware_version: 0.0.10 }
+2025-09-10T21:57:48.296383Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] write_single_register(address: 937, value: 0) timeout, retry 0/3
+2025-09-10T21:57:48.398501Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] write_single_register(address: 937, value: 0) timeout, retry 1/3
+2025-09-10T21:57:48.500556Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] write_single_register(address: 937, value: 0) timeout, retry 2/3
+2025-09-10T21:57:48.500755Z[INFO][src/python/py_device.rs:1289] Error setting finger unit mode: slave[126] write_single_register(address: 937, value: 0) failed after 3 attempts
+2025-09-10T21:57:48.501095Z[CRITICAL][/home/niic/upper_body_demo/build/dex_hand/dex_hand/trigger.py:111] Failed to set finger unit mode: Error setting finger unit mode: slave[126] write_single_register(address: 937, value: 0) failed after 3 attempts

@@ -1,0 +1,3 @@
+source;share/dex_hand/hook/pythonpath.ps1
+source;share/dex_hand/hook/pythonpath.dsv
+source;share/dex_hand/hook/pythonpath.sh

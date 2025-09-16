@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target enable[0m
+[  8%] [32mBuilding CXX object CMakeFiles/enable.dir/src/enable/main.cpp.o[0m
+[ 41%] Built target wave_hand_demo
+[ 58%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable enable[0m
+[ 66%] Built target enable

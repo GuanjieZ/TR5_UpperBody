@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../build/dex_hand/dex_hand.egg-info/PKG-INFO
+../build/dex_hand/dex_hand.egg-info/SOURCES.txt
+../build/dex_hand/dex_hand.egg-info/dependency_links.txt
+../build/dex_hand/dex_hand.egg-info/entry_points.txt
+../build/dex_hand/dex_hand.egg-info/requires.txt
+../build/dex_hand/dex_hand.egg-info/top_level.txt
+../build/dex_hand/dex_hand.egg-info/zip-safe
+dex_hand/__init__.py
+resource/dex_hand
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target teleop[0m
+[ 16%] Built target enable
+[ 50%] Built target wave_hand_demo
+[ 66%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/udp_tool.cpp.o[0m

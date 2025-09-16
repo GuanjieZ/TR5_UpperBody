@@ -1,0 +1,17 @@
+[1.003s] Invoking command in '/home/niic/upper_body_demo/build/dex_hand': PYTHONPATH=/home/niic/upper_body_demo/build/dex_hand/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/niic/upper_body_demo/build/dex_hand/build --no-deps symlink_data
+[1.399s] running develop
+[1.670s] running egg_info
+[1.670s] writing dex_hand.egg-info/PKG-INFO
+[1.671s] writing dependency_links to dex_hand.egg-info/dependency_links.txt
+[1.671s] writing entry points to dex_hand.egg-info/entry_points.txt
+[1.671s] writing requirements to dex_hand.egg-info/requires.txt
+[1.671s] writing top-level names to dex_hand.egg-info/top_level.txt
+[1.674s] reading manifest file 'dex_hand.egg-info/SOURCES.txt'
+[1.675s] writing manifest file 'dex_hand.egg-info/SOURCES.txt'
+[1.677s] running build_ext
+[1.678s] Creating /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex-hand.egg-link (link to .)
+[1.679s] Installing trigger script to /home/niic/upper_body_demo/install/dex_hand/lib/dex_hand
+[1.679s] 
+[1.679s] Installed /home/niic/upper_body_demo/build/dex_hand
+[1.680s] running symlink_data
+[1.737s] Invoked command in '/home/niic/upper_body_demo/build/dex_hand' returned '0': PYTHONPATH=/home/niic/upper_body_demo/build/dex_hand/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/niic/upper_body_demo/build/dex_hand/build --no-deps symlink_data

@@ -1,0 +1,17 @@
+2025-09-11T09:37:43.639390Z[INFO][src/python/py_mod.rs:25] bc_stark_sdk version: 0.8.8
+2025-09-11T09:37:43.640612Z[INFO][src/stark/config.rs:30] Logging initialized with level: Info
+2025-09-11T09:37:43.640870Z[INFO][src/stark/config.rs:36] StarkSDK initialized, protocol_type: Modbus
+2025-09-11T09:37:43.794491Z[WARNING][src/serial/base.rs:47] enable_low_latency failed: Os { code: 25, kind: Uncategorized, message: "Inappropriate ioctl for device" }
+2025-09-11T09:37:44.898065Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 0/3
+2025-09-11T09:37:44.999974Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 1/3
+2025-09-11T09:37:45.101724Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 2/3
+2025-09-11T09:37:45.102192Z[INFO][src/python/py_device.rs:154] Error getting device info: Failed, slave[126] read_holding_registers(address: 901, count: 1) failed after 3 attempts
+2025-09-11T09:37:45.255145Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 0/3
+2025-09-11T09:37:45.356969Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 1/3
+2025-09-11T09:37:45.458699Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 2/3
+2025-09-11T09:37:45.459073Z[INFO][src/python/py_device.rs:154] Error getting device info: Failed, slave[126] read_holding_registers(address: 901, count: 1) failed after 3 attempts
+2025-09-11T09:37:45.612040Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 0/3
+2025-09-11T09:37:45.713971Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 1/3
+2025-09-11T09:37:45.815658Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[126] read_holding_registers(address: 901, count: 1) timeout, retry 2/3
+2025-09-11T09:37:45.816042Z[INFO][src/python/py_device.rs:154] Error getting device info: Failed, slave[126] read_holding_registers(address: 901, count: 1) failed after 3 attempts
+2025-09-11T09:37:45.867666Z[CRITICAL][/home/niic/upper_body_demo/build/dex_hand/dex_hand/trigger.py:113] Failed to get device info. Id: 126

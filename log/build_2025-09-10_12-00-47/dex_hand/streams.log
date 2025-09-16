@@ -1,0 +1,19 @@
+[0.998s] Invoking command in '/home/niic/upper_body_demo/build/dex_hand': PYTHONPATH=/home/niic/upper_body_demo/build/dex_hand/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/niic/upper_body_demo/build/dex_hand/build --no-deps symlink_data --force
+[1.391s] running develop
+[1.657s] running egg_info
+[1.657s] writing dex_hand.egg-info/PKG-INFO
+[1.658s] writing dependency_links to dex_hand.egg-info/dependency_links.txt
+[1.658s] writing entry points to dex_hand.egg-info/entry_points.txt
+[1.658s] writing requirements to dex_hand.egg-info/requires.txt
+[1.658s] writing top-level names to dex_hand.egg-info/top_level.txt
+[1.661s] reading manifest file 'dex_hand.egg-info/SOURCES.txt'
+[1.662s] writing manifest file 'dex_hand.egg-info/SOURCES.txt'
+[1.664s] running build_ext
+[1.665s] Creating /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex-hand.egg-link (link to .)
+[1.666s] Installing trigger script to /home/niic/upper_body_demo/install/dex_hand/lib/dex_hand
+[1.666s] 
+[1.666s] Installed /home/niic/upper_body_demo/build/dex_hand
+[1.666s] running symlink_data
+[1.666s] symbolically linking /home/niic/upper_body_demo/build/dex_hand/resource/dex_hand -> /home/niic/upper_body_demo/install/dex_hand/share/ament_index/resource_index/packages
+[1.667s] symbolically linking /home/niic/upper_body_demo/build/dex_hand/package.xml -> /home/niic/upper_body_demo/install/dex_hand/share/dex_hand
+[1.721s] Invoked command in '/home/niic/upper_body_demo/build/dex_hand' returned '0': PYTHONPATH=/home/niic/upper_body_demo/build/dex_hand/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/niic/upper_body_demo/build/dex_hand/build --no-deps symlink_data --force

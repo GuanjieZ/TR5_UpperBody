@@ -1,0 +1,184 @@
+[0.000000] (-) TimerEvent: {}
+[0.000725] (upper_body_demo) JobQueued: {'identifier': 'upper_body_demo', 'dependencies': OrderedDict()}
+[0.001017] (upper_body_demo) JobStarted: {'identifier': 'upper_body_demo'}
+[0.013367] (upper_body_demo) JobProgress: {'identifier': 'upper_body_demo', 'progress': 'cmake'}
+[0.014240] (upper_body_demo) JobProgress: {'identifier': 'upper_body_demo', 'progress': 'build'}
+[0.015086] (upper_body_demo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/niic/upper_body_demo/build/upper_body_demo', '--', '-j12', '-l12'], 'cwd': '/home/niic/upper_body_demo/build/upper_body_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'niic'), ('SSH_CLIENT', '192.168.0.61 43660 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/niic/third_party/install/lib:/home/niic/tr5-orin/ros2_ws/src/niic_ethercat_motors/libtorch/lib:/home/niic/tr5-orin/ros2_ws/src/rl_pub/libtorch/lib:/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors/lib:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces/lib:/home/niic/IMU/install/xsens_mti_ros2_driver/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/niic'), ('OLDPWD', '/home/niic'), ('SSH_TTY', '/dev/pts/20'), ('JETSON_L4T', '36.4.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/niic/tr5-orin/ros2_ws/install:/home/niic/IMU/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'niic'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422624327093'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '32'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/niic/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('ROS_DOMAIN_ID', '53'), ('AMENT_PREFIX_PATH', '/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces:/home/niic/IMU/install/xsens_mti_ros2_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/niic/upper_body_demo/build/upper_body_demo'), ('SSH_CONNECTION', '192.168.0.61 43660 192.168.1.14 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors/local/lib/python3.10/dist-packages:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces/local/lib/python3.10/dist-packages:/home/niic/IMU/install/xsens_mti_ros2_driver/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.1'), ('CMAKE_PREFIX_PATH', '/home/niic/third_party/install:/home/niic/third_party/pinocchio:/home/niic/tr5-orin/ros2_ws/install/niic_ethercat_motors:/home/niic/tr5-orin/ros2_ws/install/tr5_interfaces:/home/niic/IMU/install/xsens_mti_ros2_driver:/opt/ros/humble')]), 'shell': False}
+[0.092897] (upper_body_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target teleop\x1b[0m\n'}
+[0.099276] (-) TimerEvent: {}
+[0.108220] (upper_body_demo) StdoutLine: {'line': b'[ 16%] Built target enable\n'}
+[0.112623] (upper_body_demo) StdoutLine: {'line': b'[ 50%] Built target wave_hand_demo\n'}
+[0.137116] (upper_body_demo) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o\x1b[0m\n'}
+[0.199750] (-) TimerEvent: {}
+[0.300210] (-) TimerEvent: {}
+[0.400665] (-) TimerEvent: {}
+[0.501120] (-) TimerEvent: {}
+[0.601585] (-) TimerEvent: {}
+[0.702053] (-) TimerEvent: {}
+[0.802497] (-) TimerEvent: {}
+[0.903070] (-) TimerEvent: {}
+[1.003547] (-) TimerEvent: {}
+[1.104000] (-) TimerEvent: {}
+[1.204471] (-) TimerEvent: {}
+[1.304948] (-) TimerEvent: {}
+[1.405387] (-) TimerEvent: {}
+[1.505886] (-) TimerEvent: {}
+[1.606380] (-) TimerEvent: {}
+[1.706868] (-) TimerEvent: {}
+[1.807307] (-) TimerEvent: {}
+[1.907814] (-) TimerEvent: {}
+[2.008295] (-) TimerEvent: {}
+[2.108967] (-) TimerEvent: {}
+[2.209757] (-) TimerEvent: {}
+[2.310298] (-) TimerEvent: {}
+[2.410757] (-) TimerEvent: {}
+[2.511310] (-) TimerEvent: {}
+[2.611783] (-) TimerEvent: {}
+[2.712283] (-) TimerEvent: {}
+[2.812758] (-) TimerEvent: {}
+[2.913215] (-) TimerEvent: {}
+[3.013710] (-) TimerEvent: {}
+[3.114171] (-) TimerEvent: {}
+[3.214607] (-) TimerEvent: {}
+[3.315049] (-) TimerEvent: {}
+[3.415521] (-) TimerEvent: {}
+[3.515950] (-) TimerEvent: {}
+[3.616643] (-) TimerEvent: {}
+[3.717095] (-) TimerEvent: {}
+[3.817578] (-) TimerEvent: {}
+[3.918026] (-) TimerEvent: {}
+[4.018469] (-) TimerEvent: {}
+[4.118941] (-) TimerEvent: {}
+[4.219421] (-) TimerEvent: {}
+[4.319892] (-) TimerEvent: {}
+[4.420378] (-) TimerEvent: {}
+[4.520887] (-) TimerEvent: {}
+[4.621332] (-) TimerEvent: {}
+[4.721799] (-) TimerEvent: {}
+[4.822248] (-) TimerEvent: {}
+[4.922702] (-) TimerEvent: {}
+[5.023152] (-) TimerEvent: {}
+[5.123630] (-) TimerEvent: {}
+[5.224098] (-) TimerEvent: {}
+[5.324563] (-) TimerEvent: {}
+[5.425001] (-) TimerEvent: {}
+[5.525563] (-) TimerEvent: {}
+[5.626020] (-) TimerEvent: {}
+[5.726481] (-) TimerEvent: {}
+[5.826933] (-) TimerEvent: {}
+[5.927362] (-) TimerEvent: {}
+[6.027824] (-) TimerEvent: {}
+[6.128365] (-) TimerEvent: {}
+[6.228877] (-) TimerEvent: {}
+[6.329372] (-) TimerEvent: {}
+[6.429852] (-) TimerEvent: {}
+[6.530334] (-) TimerEvent: {}
+[6.630792] (-) TimerEvent: {}
+[6.731230] (-) TimerEvent: {}
+[6.831719] (-) TimerEvent: {}
+[6.932143] (-) TimerEvent: {}
+[7.032601] (-) TimerEvent: {}
+[7.133045] (-) TimerEvent: {}
+[7.233474] (-) TimerEvent: {}
+[7.333934] (-) TimerEvent: {}
+[7.434461] (-) TimerEvent: {}
+[7.534490] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTeleopNode::TeleopNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.534919] (-) TimerEvent: {}
+[7.535125] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:213:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktoo many arguments to function \xe2\x80\x98\x1b[01m\x1b[Kint init_broadcast_socket(sockaddr_in*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.535290] (upper_body_demo) StderrLine: {'line': b'  213 |     int sockfd_ = \x1b[01;31m\x1b[Kinit_broadcast_socket(&dest_addr, "192.168.0.255", 12345)\x1b[m\x1b[K;\n'}
+[7.535395] (upper_body_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.535484] (upper_body_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:8\x1b[m\x1b[K:\n'}
+[7.535590] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/../udp_tool.hpp:8:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.535677] (upper_body_demo) StderrLine: {'line': b'    8 | int \x1b[01;36m\x1b[Kinit_broadcast_socket\x1b[m\x1b[K(struct sockaddr_in *broadcast_addr);\n'}
+[7.535758] (upper_body_demo) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.564643] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[7.565075] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:300:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksockfd_\x1b[m\x1b[K\xe2\x80\x99 is not captured\n'}
+[7.565203] (upper_body_demo) StderrLine: {'line': b'  300 |             \x1b[01;31m\x1b[Ksockfd_\x1b[m\x1b[K,\n'}
+[7.565302] (upper_body_demo) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.565390] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:285:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthe lambda has no capture-default\n'}
+[7.565476] (upper_body_demo) StderrLine: {'line': b'  285 |     task_->set_receive_callback([this\x1b[01;36m\x1b[K]\x1b[m\x1b[K {\n'}
+[7.565621] (upper_body_demo) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[7.565710] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:213:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint sockfd_\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[7.565793] (upper_body_demo) StderrLine: {'line': b'  213 |     int \x1b[01;36m\x1b[Ksockfd_\x1b[m\x1b[K = init_broadcast_socket(&dest_addr, "192.168.0.255", 12345);\n'}
+[7.565883] (upper_body_demo) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.565963] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:304:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdest_addr\x1b[m\x1b[K\xe2\x80\x99 is not captured\n'}
+[7.566041] (upper_body_demo) StderrLine: {'line': b'  304 |             reinterpret_cast<const sockaddr*>(&\x1b[01;31m\x1b[Kdest_addr\x1b[m\x1b[K),\n'}
+[7.566119] (upper_body_demo) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.566194] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:285:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthe lambda has no capture-default\n'}
+[7.566270] (upper_body_demo) StderrLine: {'line': b'  285 |     task_->set_receive_callback([this\x1b[01;36m\x1b[K]\x1b[m\x1b[K {\n'}
+[7.566344] (upper_body_demo) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[7.566418] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:212:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksockaddr_in dest_addr\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[7.566537] (upper_body_demo) StderrLine: {'line': b'  212 |     sockaddr_in \x1b[01;36m\x1b[Kdest_addr\x1b[m\x1b[K{};\n'}
+[7.566617] (upper_body_demo) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.635056] (-) TimerEvent: {}
+[7.735518] (-) TimerEvent: {}
+[7.835976] (-) TimerEvent: {}
+[7.936441] (-) TimerEvent: {}
+[8.036926] (-) TimerEvent: {}
+[8.137447] (-) TimerEvent: {}
+[8.237897] (-) TimerEvent: {}
+[8.338340] (-) TimerEvent: {}
+[8.438877] (-) TimerEvent: {}
+[8.539327] (-) TimerEvent: {}
+[8.639821] (-) TimerEvent: {}
+[8.740274] (-) TimerEvent: {}
+[8.840734] (-) TimerEvent: {}
+[8.941183] (-) TimerEvent: {}
+[9.041601] (-) TimerEvent: {}
+[9.142065] (-) TimerEvent: {}
+[9.242517] (-) TimerEvent: {}
+[9.342988] (-) TimerEvent: {}
+[9.443497] (-) TimerEvent: {}
+[9.543949] (-) TimerEvent: {}
+[9.645413] (-) TimerEvent: {}
+[9.745882] (-) TimerEvent: {}
+[9.846347] (-) TimerEvent: {}
+[9.946836] (-) TimerEvent: {}
+[10.047290] (-) TimerEvent: {}
+[10.147787] (-) TimerEvent: {}
+[10.248251] (-) TimerEvent: {}
+[10.348708] (-) TimerEvent: {}
+[10.449152] (-) TimerEvent: {}
+[10.549601] (-) TimerEvent: {}
+[10.650051] (-) TimerEvent: {}
+[10.750544] (-) TimerEvent: {}
+[10.850967] (-) TimerEvent: {}
+[10.951391] (-) TimerEvent: {}
+[11.051830] (-) TimerEvent: {}
+[11.152263] (-) TimerEvent: {}
+[11.252720] (-) TimerEvent: {}
+[11.353145] (-) TimerEvent: {}
+[11.453584] (-) TimerEvent: {}
+[11.554130] (-) TimerEvent: {}
+[11.654821] (-) TimerEvent: {}
+[11.755261] (-) TimerEvent: {}
+[11.855749] (-) TimerEvent: {}
+[11.956180] (-) TimerEvent: {}
+[12.056601] (-) TimerEvent: {}
+[12.157036] (-) TimerEvent: {}
+[12.257468] (-) TimerEvent: {}
+[12.357922] (-) TimerEvent: {}
+[12.458352] (-) TimerEvent: {}
+[12.558795] (-) TimerEvent: {}
+[12.659217] (-) TimerEvent: {}
+[12.759590] (-) TimerEvent: {}
+[12.860038] (-) TimerEvent: {}
+[12.960515] (-) TimerEvent: {}
+[13.060942] (-) TimerEvent: {}
+[13.161412] (-) TimerEvent: {}
+[13.261851] (-) TimerEvent: {}
+[13.362300] (-) TimerEvent: {}
+[13.368942] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[13.369263] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:152:88:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<float, float>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 \x1b]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_base\x07in GCC 10.1\x1b]8;;\x07\n'}
+[13.369382] (upper_body_demo) StderrLine: {'line': b'  152 |           auto [lf, lb] = solveIK(ctx.target_q_rot[7],  ctx.target_q_rot[8], Side::Left\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[13.369475] (upper_body_demo) StderrLine: {'line': b'      |                                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.462415] (-) TimerEvent: {}
+[13.562948] (-) TimerEvent: {}
+[13.663368] (-) TimerEvent: {}
+[13.763822] (-) TimerEvent: {}
+[13.824465] (upper_body_demo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/teleop.dir/build.make:76: CMakeFiles/teleop.dir/src/teleop/main.cpp.o] Error 1\n'}
+[13.825861] (upper_body_demo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/teleop.dir/all] Error 2\n'}
+[13.826273] (upper_body_demo) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.829921] (upper_body_demo) CommandEnded: {'returncode': 2}
+[13.848072] (upper_body_demo) JobEnded: {'identifier': 'upper_body_demo', 'rc': 2}
+[13.858891] (-) EventReactorShutdown: {}

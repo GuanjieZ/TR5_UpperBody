@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing dex_hand.egg-info/PKG-INFO
+writing dependency_links to dex_hand.egg-info/dependency_links.txt
+writing entry points to dex_hand.egg-info/entry_points.txt
+writing requirements to dex_hand.egg-info/requires.txt
+writing top-level names to dex_hand.egg-info/top_level.txt
+reading manifest file 'dex_hand.egg-info/SOURCES.txt'
+writing manifest file 'dex_hand.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex-hand.egg-link (link to .)
+Installing trigger script to /home/niic/upper_body_demo/install/dex_hand/lib/dex_hand
+
+Installed /home/niic/upper_body_demo/build/dex_hand
+running symlink_data

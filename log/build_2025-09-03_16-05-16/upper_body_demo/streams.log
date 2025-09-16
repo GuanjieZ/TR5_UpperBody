@@ -1,0 +1,76 @@
+[0.014s] Invoking command in '/home/niic/upper_body_demo/build/upper_body_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12
+[0.080s] [35m[1mConsolidate compiler generated dependencies of target wave_hand_demo[0m
+[0.080s] [35m[1mConsolidate compiler generated dependencies of target teleop[0m
+[0.116s] [ 40%] Built target wave_hand_demo
+[0.120s] [ 60%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o[0m
+[0.121s] [ 60%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o[0m
+[1.150s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:[m[K In member function ‘[01m[Kvirtual void armPosiSender::on_cycle()[m[K’:
+[1.150s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:52:56:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kclamp(std::array<int, 16>::value_type&, float, float&)[m[K’
+[1.151s]    52 |         _ctx.command_q_dot[_axis.joint_id] = [01;31m[Kstd::clamp(_ctx.command_q_dot[_axis.joint_id], -_max_rot_vel, _max_rot_vel)[m[K;
+[1.151s]       |                                              [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.151s] In file included from [01m[K/usr/include/c++/11/functional:65[m[K,
+[1.151s]                  from [01m[K/usr/include/spdlog/common.h:16[m[K,
+[1.151s]                  from [01m[K/usr/include/spdlog/spdlog.h:12[m[K,
+[1.151s]                  from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:3[m[K:
+[1.151s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3656:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&)[m[K’
+[1.151s]  3656 |     [01;36m[Kclamp[m[K(const _Tp& __val, const _Tp& __lo, const _Tp& __hi)
+[1.151s]       |     [01;36m[K^~~~~[m[K
+[1.151s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3656:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.151s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:52:56:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kint[m[K’ and ‘[01m[Kfloat[m[K’)
+[1.152s]    52 |         _ctx.command_q_dot[_axis.joint_id] = [01;36m[Kstd::clamp(_ctx.command_q_dot[_axis.joint_id], -_max_rot_vel, _max_rot_vel)[m[K;
+[1.152s]       |                                              [01;36m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.152s] In file included from [01m[K/usr/include/c++/11/functional:65[m[K,
+[1.152s]                  from [01m[K/usr/include/spdlog/common.h:16[m[K,
+[1.152s]                  from [01m[K/usr/include/spdlog/spdlog.h:12[m[K,
+[1.152s]                  from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:3[m[K:
+[1.152s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3674:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&, _Compare)[m[K’
+[1.152s]  3674 |     [01;36m[Kclamp[m[K(const _Tp& __val, const _Tp& __lo, const _Tp& __hi, _Compare __comp)
+[1.152s]       |     [01;36m[K^~~~~[m[K
+[1.152s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3674:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.152s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:52:56:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kint[m[K’ and ‘[01m[Kfloat[m[K’)
+[1.152s]    52 |         _ctx.command_q_dot[_axis.joint_id] = [01;36m[Kstd::clamp(_ctx.command_q_dot[_axis.joint_id], -_max_rot_vel, _max_rot_vel)[m[K;
+[1.152s]       |                                              [01;36m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.153s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:53:38:[m[K [01;31m[Kerror: [m[Kassignment of read-only location ‘[01m[K*((armPosiSender*)this)->armPosiSender::_axis.axis_data::velocity_actual_value[m[K’
+[1.153s]    53 |         [01;31m[K*_axis.velocity_actual_value = ang2enc_vel(_ctx.command_q_dot[_axis.joint_id])[m[K;
+[1.153s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.157s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:60:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kctx[m[K’ was not declared in this scope; did you mean ‘[01m[K_ctx[m[K’?
+[1.158s]    60 |         [01;31m[Kctx[m[K.command_q_dot[_axis.joint_id] = enc2len_vel(*_axis.velocity_actual_value) + std::clamp(_ctx.target_q_dot[_axis.joint_id] - enc2len_vel(*_axis.velocity_actual_value), -_max_lin_accl, _max_lin_accl);
+[1.158s]       |         [01;31m[K^~~[m[K
+[1.158s]       |         [32m[K_ctx[m[K
+[1.158s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:61:56:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kclamp(std::array<int, 16>::value_type&, float, float&)[m[K’
+[1.158s]    61 |         _ctx.command_q_dot[_axis.joint_id] = [01;31m[Kstd::clamp(_ctx.command_q_dot[_axis.joint_id], -_max_lin_vel, _max_lin_vel)[m[K;
+[1.158s]       |                                              [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.158s] In file included from [01m[K/usr/include/c++/11/functional:65[m[K,
+[1.158s]                  from [01m[K/usr/include/spdlog/common.h:16[m[K,
+[1.158s]                  from [01m[K/usr/include/spdlog/spdlog.h:12[m[K,
+[1.159s]                  from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:3[m[K:
+[1.159s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3656:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&)[m[K’
+[1.159s]  3656 |     [01;36m[Kclamp[m[K(const _Tp& __val, const _Tp& __lo, const _Tp& __hi)
+[1.159s]       |     [01;36m[K^~~~~[m[K
+[1.159s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3656:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.159s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:61:56:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kint[m[K’ and ‘[01m[Kfloat[m[K’)
+[1.159s]    61 |         _ctx.command_q_dot[_axis.joint_id] = [01;36m[Kstd::clamp(_ctx.command_q_dot[_axis.joint_id], -_max_lin_vel, _max_lin_vel)[m[K;
+[1.159s]       |                                              [01;36m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.159s] In file included from [01m[K/usr/include/c++/11/functional:65[m[K,
+[1.159s]                  from [01m[K/usr/include/spdlog/common.h:16[m[K,
+[1.159s]                  from [01m[K/usr/include/spdlog/spdlog.h:12[m[K,
+[1.159s]                  from [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:3[m[K:
+[1.159s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3674:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&, _Compare)[m[K’
+[1.160s]  3674 |     [01;36m[Kclamp[m[K(const _Tp& __val, const _Tp& __lo, const _Tp& __hi, _Compare __comp)
+[1.160s]       |     [01;36m[K^~~~~[m[K
+[1.160s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3674:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.160s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:61:56:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kint[m[K’ and ‘[01m[Kfloat[m[K’)
+[1.160s]    61 |         _ctx.command_q_dot[_axis.joint_id] = [01;36m[Kstd::clamp(_ctx.command_q_dot[_axis.joint_id], -_max_lin_vel, _max_lin_vel)[m[K;
+[1.160s]       |                                              [01;36m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.160s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/armPosiSender.cpp:62:38:[m[K [01;31m[Kerror: [m[Kassignment of read-only location ‘[01m[K*((armPosiSender*)this)->armPosiSender::_axis.axis_data::velocity_actual_value[m[K’
+[1.160s]    62 |         [01;31m[K*_axis.velocity_actual_value = len2enc_vel(_ctx.command_q_dot[_axis.joint_id])[m[K;
+[1.160s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.316s] gmake[2]: *** [CMakeFiles/teleop.dir/build.make:104: CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o] Error 1
+[1.316s] gmake[2]: *** Waiting for unfinished jobs....
+[11.537s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[11.537s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:141:88:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[11.537s]   141 |           auto [lf, lb] = solveIK(ctx.target_q_rot[7],  ctx.target_q_rot[8], Side::Left[01;36m[K)[m[K;
+[11.537s]       |                                                                                        [01;36m[K^[m[K
+[18.240s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/teleop.dir/all] Error 2
+[18.240s] gmake: *** [Makefile:146: all] Error 2
+[18.243s] Invoked command in '/home/niic/upper_body_demo/build/upper_body_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12
