@@ -1,0 +1,80 @@
+[0.325s] Invoking command in '/home/niic/upper_body_demo/build/upper_body_demo': /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12
+[0.393s] [ 16%] Built target enable
+[0.400s] [ 33%] [32mBuilding CXX object CMakeFiles/wave_hand_demo.dir/src/wavehand/WaveHandDemo.cpp.o[0m
+[0.400s] [ 33%] [32mBuilding CXX object CMakeFiles/wave_hand_demo.dir/src/wavehand/main.cpp.o[0m
+[0.403s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o[0m
+[0.403s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o[0m
+[10.611s] [ 58%] [32m[1mLinking CXX executable wave_hand_demo[0m
+[11.566s] [ 66%] Built target wave_hand_demo
+[13.430s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[13.430s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:152:88:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 in GCC 10.1
+[13.430s]   152 |           auto [lf, lb] = solveIK(ctx.target_q_rot[7],  ctx.target_q_rot[8], Side::Left[01;36m[K)[m[K;
+[13.430s]       |                                                                                        [01;36m[K^[m[K
+[21.437s] [ 75%] [32m[1mLinking CXX executable teleop[0m
+[23.228s] [100%] Built target teleop
+[23.242s] Invoked command in '/home/niic/upper_body_demo/build/upper_body_demo' returned '0': /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12
+[23.253s] Invoking command in '/home/niic/upper_body_demo/build/upper_body_demo': /usr/bin/cmake --install /home/niic/upper_body_demo/build/upper_body_demo
+[23.262s] -- Install configuration: ""
+[23.262s] -- Execute custom install script
+[23.263s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/lib/upper_body_demo/wave_hand_demo
+[23.263s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/lib/upper_body_demo/teleop
+[23.263s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/lib/upper_body_demo/enable
+[23.263s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/ament_index/resource_index/package_run_dependencies/upper_body_demo
+[23.264s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/ament_index/resource_index/parent_prefix_path/upper_body_demo
+[23.264s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/environment/ament_prefix_path.sh
+[23.264s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/environment/ament_prefix_path.dsv
+[23.264s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/environment/path.sh
+[23.264s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/environment/path.dsv
+[23.265s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/local_setup.bash
+[23.265s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/local_setup.sh
+[23.265s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/local_setup.zsh
+[23.265s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/local_setup.dsv
+[23.265s] -- Symlinking: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.dsv
+[23.276s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/ament_index/resource_index/packages/upper_body_demo
+[23.276s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/cmake/upper_body_demoConfig.cmake
+[23.276s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/cmake/upper_body_demoConfig-version.cmake
+[23.276s] -- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.xml
+[23.276s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo
+[23.276s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat
+[23.277s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/error.hpp
+[23.277s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/thread_mutex.hpp
+[23.277s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/master.hpp
+[23.277s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/eni_config.hpp
+[23.277s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/types.hpp
+[23.277s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/ipc.hpp
+[23.277s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/pwm.hpp
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/slice.hpp
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/buffer_locked.hpp
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/task_collaborative.hpp
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/sdo_request.hpp
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/log.hpp
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/reg_request.hpp
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/config.hpp
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/os_string.hpp
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/logger.hpp
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/ioctl.hpp
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/file.hpp
+[23.278s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/log_handler.hpp
+[23.279s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/utility.hpp
+[23.279s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/thread.hpp
+[23.279s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/sii_crc.hpp
+[23.279s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/esi_index.hpp
+[23.279s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/dc.hpp
+[23.279s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/task.hpp
+[23.279s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/version.hpp
+[23.279s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/run_time_stat.hpp
+[23.280s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/thread_rtlock.hpp
+[23.281s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/task_assist.hpp
+[23.281s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/slave_config.hpp
+[23.281s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/buffer_rtlocked.hpp
+[23.281s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/rokae
+[23.282s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/rokae/extra.hpp
+[23.282s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/s2s_func.hpp
+[23.282s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/niic_api.hpp
+[23.282s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/algorithm_threads.hpp
+[23.282s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/spi_io.hpp
+[23.282s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/buffer.hpp
+[23.283s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/task_interface.hpp
+[23.283s] -- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/upper_body_demo
+[23.283s] Invoked command in '/home/niic/upper_body_demo/build/upper_body_demo' returned '0': /usr/bin/cmake --install /home/niic/upper_body_demo/build/upper_body_demo

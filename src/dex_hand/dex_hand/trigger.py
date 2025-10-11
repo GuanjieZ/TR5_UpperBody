@@ -17,7 +17,8 @@ def _baud_from_param(name: str) -> "libstark.Baudrate":
     try:
         return getattr(libstark.Baudrate, name)
     except AttributeError:
-        return libstark.Baudrate.Baud115200
+        # return libstark.Baudrate.Baud115200
+        return libstark.Baudrate.Baud1Mpbs
 
 
 class Revo2Node(Node):
@@ -26,9 +27,11 @@ class Revo2Node(Node):
         self._loop = loop
 
         # ---- Parameters ----
-        self.declare_parameter("port", "/dev/ttyCH341USB0")
-        self.declare_parameter("baudrate", "Baud115200")
-        self.declare_parameter("slave_id", 0x7F)
+        self.declare_parameter("port", "/dev/ttyUSB1")
+        # self.declare_parameter("baudrate", "Baud115200") 
+        self.declare_parameter("baudrate", "Baud1Mbps") 
+        self.declare_parameter("left_hand_id", 0x7E)
+        self.declare_parameter("right_hand_id", 0x7F)
         self.declare_parameter("period", 2.0)
         self.declare_parameter("loop_dt", 0.01)
         self.declare_parameter("speeds", [750, 750, 750, 750, 750, 750])
@@ -36,11 +39,13 @@ class Revo2Node(Node):
         self.declare_parameter("positions_b", [400, 750, 500, 0, 0, 0])
         self.declare_parameter("grasp", [400, 750, 500, 0, 0, 0])
         
-        self._current = [0, 750, -500, -500, -500, -500]
+        self._current_right = [0, 750, -500, -500, -500, -500]
+        self._current_left = [0, 750, -500, -500, -500, -500]
 
         self._port: str = self.get_parameter("port").get_parameter_value().string_value
         self._baud = _baud_from_param(self.get_parameter("baudrate").get_parameter_value().string_value)
-        self._slave_id: int = 127#self.get_parameter("slave_id").get_parameter_value().integer_value
+        self._left_hand_id: int = self.get_parameter("left_hand_id").get_parameter_value().integer_value
+        self._right_hand_id: int = self.get_parameter("right_hand_id").get_parameter_value().integer_value
         self._period: float = self.get_parameter("period").get_parameter_value().double_value
         self._loop_dt: float = self.get_parameter("loop_dt").get_parameter_value().double_value
 
@@ -63,16 +68,27 @@ class Revo2Node(Node):
         self._run_task = self._loop.create_task(self._async_setup_and_run(), name="revo2_run_task")
         self.get_logger().info("Revo2Node initialized (Humble-safe).")
         
-        # Trigger subscriber
+        # Right Hand Trigger subscriber
         self._sub_positions = self.create_subscription(
             Float64,
             "vr_trig_right",
-            self._trig_callback,
+            self._rh_trig_callback,
+            10,  # QoS queue size
+        )
+        
+        # Left Hand Trigger subscriber
+        self._sub_positions = self.create_subscription(
+            Float64,
+            "vr_trig_left",
+            self._lh_trig_callback,
             10,  # QoS queue size
         )
 
-    def _trig_callback(self, msg: Float64):
-        self._current = [int((msg.data-0.5)*500), 750, int((msg.data-0.5)*2000), int((msg.data-0.5)*2000), int((msg.data-0.5)*2000), int((msg.data-0.5)*2000)]
+    def _rh_trig_callback(self, msg: Float64):
+        self._current_right = [int((msg.data-0.5)*500), 750, int((msg.data-0.5)*2000), int((msg.data-0.5)*2000), int((msg.data-0.5)*2000), int((msg.data-0.5)*2000)]
+
+    def _lh_trig_callback(self, msg: Float64):
+        self._current_left = [int((msg.data-0.5)*500), 750, int((msg.data-0.5)*2000), int((msg.data-0.5)*2000), int((msg.data-0.5)*2000), int((msg.data-0.5)*2000)]
     
     def _on_param_set(self, params):
         for p in params:
@@ -103,14 +119,14 @@ class Revo2Node(Node):
         info = None
         for attempt in range(3):
             try:
-                info = await self._client.get_device_info(self._slave_id)
+                info = await self._client.get_device_info(self._left_hand_id)
                 break  # success
             except Exception as e:
                 self.get_logger().warn(f"get_device_info attempt {attempt+1} failed: {e}")
                 await asyncio.sleep(0.05)
 
         if not info:
-            msg = f"Failed to get device info. Id: {self._slave_id}"
+            msg = f"Failed to get device info. Id: {self._left_hand_id}"
             logger.critical(msg)
             self.get_logger().fatal(msg)
             await self._cleanup()
@@ -121,7 +137,7 @@ class Revo2Node(Node):
 
         # Mode
         try:
-            await self._client.set_finger_unit_mode(self._slave_id, libstark.FingerUnitMode.Normalized)
+            await self._client.set_finger_unit_mode(self._left_hand_id, libstark.FingerUnitMode.Normalized)
         except Exception as e:
             logger.critical(f"Failed to set finger unit mode: {e}")
             self.get_logger().fatal(f"Failed to set finger unit mode: {e}")
@@ -131,17 +147,19 @@ class Revo2Node(Node):
         # Loop
         self.get_logger().info("Entering control loop.")
         try:
-            self._client.set_finger_positions(self._slave_id, [0, 800, 0, 0, 0, 0])
+            await self._client.set_finger_positions(self._right_hand_id, [0, 0, 0, 0, 0, 0])
+            await self._client.set_finger_positions(self._left_hand_id, [0, 0, 0, 0, 0, 0])
             await asyncio.sleep(1.0)
             while not self._shutdown_event.is_set():
-                # self._client.set_serialport_baudrate(self._slave_id, libstark.Baudrate.Baud115200)
+                # await self._client.set_serialport_baudrate(self._left_hand_id, libstark.Baudrate.Baud1Mbps)
                 now_ms = int(time.time() * 1000)
                 t = (now_ms / 1000.0) % self._period
                 current = -1000 if t < self._period / 2.0 else 1000
                 # pos = self._pos_a if t < self._period / 2.0 else self._pos_b
                 try:
-                    await self._client.set_finger_currents(self._slave_id, self._current)
-                    # self._client.set_finger_positions(self._slave_id, self.pos_a)
+                    await self._client.set_finger_currents(self._right_hand_id, self._current_right)
+                    await self._client.set_finger_currents(self._left_hand_id, self._current_left)
+                    # self._client.set_finger_positions(self._left_hand_id, self.pos_a)
                 except Exception as e:
                     self.get_logger().error(f"set_finger_positions_and_speeds failed: {e}")
                 await asyncio.sleep(self._loop_dt)

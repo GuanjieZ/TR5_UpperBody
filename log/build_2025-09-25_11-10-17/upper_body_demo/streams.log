@@ -1,0 +1,16 @@
+[0.428s] Invoking command in '/home/niic/upper_body_demo/build/upper_body_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/niic/upper_body_demo/build/upper_body_demo -- -j12 -l12
+[0.511s] [35m[1mConsolidate compiler generated dependencies of target wave_hand_demo[0m
+[0.513s] [35m[1mConsolidate compiler generated dependencies of target teleop[0m
+[0.528s] [ 16%] Built target enable
+[0.551s] [ 33%] [32mBuilding CXX object CMakeFiles/wave_hand_demo.dir/src/wavehand/main.cpp.o[0m
+[0.552s] [ 33%] [32mBuilding CXX object CMakeFiles/wave_hand_demo.dir/src/wavehand/WaveHandDemo.cpp.o[0m
+[0.571s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o[0m
+[0.571s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o[0m
+[10.556s] [ 58%] [32m[1mLinking CXX executable wave_hand_demo[0m
+[11.510s] [ 66%] Built target wave_hand_demo
+[13.926s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:[m[K In lambda function:
+[13.926s] [01m[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:152:88:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 in GCC 10.1
+[13.926s]   152 |           auto [lf, lb] = solveIK(ctx.target_q_rot[7],  ctx.target_q_rot[8], Side::Left[01;36m[K)[m[K;
+[13.926s]       |                                                                                        [01;36m[K^[m[K
+[22.019s] [ 75%] [32m[1mLinking CXX executable teleop[0m
+[23.851s] [100%] Built target teleop

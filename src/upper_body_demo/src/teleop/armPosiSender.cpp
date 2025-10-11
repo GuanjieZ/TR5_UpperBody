@@ -25,13 +25,13 @@ armPosiSender::armPosiSender(axis_data& axis,
   , _last_step(-1)
   , _print_cnt(0)
   , _max_rot_accl(1.0472*10/1000.0)
-  , _max_rot_vel(1.0472)
+  , _max_rot_vel(1.0472/1)
   , _max_lin_accl(20.0*10/1000.0)
-  , _max_lin_vel(20.0)
+  , _max_lin_vel(20.0/1)
 
 {}
 
-void armPosiSender::on_cycle() {
+void armPosiSender::on_cycle() { 
     
     bool is_test = true;
     _print_cnt++;
@@ -41,7 +41,10 @@ void armPosiSender::on_cycle() {
 
     // 2) Enable/disable per list
     // _power.enable = _ctx.enable_flags[_axis.joint_id];
-    if (_axis.joint_id >= 9)_power.enable = _ctx.enable_flags[_axis.joint_id];
+    // if (_axis.joint_id != 8)_power.enable = _ctx.enable_flags[_axis.joint_id];
+    // else _power.enable = false;
+
+    if (_axis.joint_id > 8)_power.enable = _ctx.enable_flags[_axis.joint_id];
     else _power.enable = false;
     
     // if (_print_cnt % 500 == 0) {
@@ -70,6 +73,7 @@ void armPosiSender::on_cycle() {
         float new_qdot = _ctx.qdot_kp[_axis.joint_id]*4.0 * (_ctx.target_q[_axis.joint_id] - _ctx.q[_axis.joint_id]) + _ctx.qdot_ki[_axis.joint_id]*1.0 * _ctx.q_err[_axis.joint_id];
         _ctx.command_q_dot[_axis.joint_id]  += std::clamp(new_qdot - _ctx.command_q_dot[_axis.joint_id], -_max_rot_accl, _max_rot_accl);
         _ctx.command_q_dot[_axis.joint_id] = std::clamp(_ctx.command_q_dot[_axis.joint_id], -_max_rot_vel, _max_rot_vel);
+        _ctx.command_q_dot[_axis.joint_id] = _ctx.command_q_dot[_axis.joint_id];
         *_axis.target_velocity = ang2enc_vel(_ctx.command_q_dot[_axis.joint_id]);
 
     } else {
@@ -83,6 +87,7 @@ void armPosiSender::on_cycle() {
         float new_qdot = _ctx.qdot_kp[_axis.joint_id]*12.0 * (_ctx.target_q[_axis.joint_id] - _ctx.q[_axis.joint_id]) + _ctx.qdot_ki[_axis.joint_id]*3.0 * _ctx.q_err[_axis.joint_id];
         _ctx.command_q_dot[_axis.joint_id]  += std::clamp(new_qdot - _ctx.command_q_dot[_axis.joint_id], -_max_lin_accl, _max_lin_accl);
         _ctx.command_q_dot[_axis.joint_id] = std::clamp(_ctx.command_q_dot[_axis.joint_id], -_max_lin_vel, _max_lin_vel);
+        _ctx.command_q_dot[_axis.joint_id] = _ctx.command_q_dot[_axis.joint_id];
         *_axis.target_velocity = len2enc_vel(_ctx.command_q_dot[_axis.joint_id]);
     }
 

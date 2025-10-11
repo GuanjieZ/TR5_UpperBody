@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'trigger = dex_hand.trigger:main',
-            'rps = dex_hand.rps:main'
+            'rps_hand = dex_hand.rps_hand:main',
+            'rps_cam = dex_hand.rps_cam:main'
         ],
     },
 )

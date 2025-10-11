@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target wave_hand_demo[0m
+[35m[1mConsolidate compiler generated dependencies of target teleop[0m
+[ 16%] Built target enable
+[ 33%] [32mBuilding CXX object CMakeFiles/wave_hand_demo.dir/src/wavehand/main.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/wave_hand_demo.dir/src/wavehand/WaveHandDemo.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o[0m
+[ 58%] [32m[1mLinking CXX executable wave_hand_demo[0m
+[ 66%] Built target wave_hand_demo
+[ 75%] [32m[1mLinking CXX executable teleop[0m
+[100%] Built target teleop

@@ -1,0 +1,77 @@
+2025-09-19T17:27:11.741636Z[INFO][src/python/py_mod.rs:25] bc_stark_sdk version: 0.8.8
+2025-09-19T17:27:11.742812Z[INFO][src/stark/config.rs:30] Logging initialized with level: Info
+2025-09-19T17:27:11.743049Z[INFO][src/stark/config.rs:36] StarkSDK initialized, protocol_type: Modbus
+2025-09-19T17:27:12.887828Z[INFO][/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/trigger.py:135] Left: DeviceInfo { sku_type: MediumLeft, serial_number: BCXRL2146J2500005, firmware_version: 0.0.10 }
+2025-09-19T17:28:03.758528Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:29:03.817382Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:30:03.875322Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:31:03.933751Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:32:08.352130Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:33:09.854141Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:34:09.905036Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:35:09.964418Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:36:10.023294Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:37:10.068272Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:38:10.118828Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:39:10.178425Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:40:11.601361Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:41:14.599345Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:42:16.102457Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:43:16.152312Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:44:17.606264Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:45:19.100677Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:46:20.603471Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:47:22.100154Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:48:23.603164Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:49:23.659357Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:50:23.715821Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:51:23.775105Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:52:23.833303Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:53:25.355263Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:54:26.854389Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:55:26.905329Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:56:26.962105Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:57:27.017351Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:58:27.078308Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T17:59:27.128441Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:00:27.185403Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:01:27.245161Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:02:27.304256Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:03:27.334424Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:04:27.387097Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:05:28.849585Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:06:28.910396Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:07:28.963381Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:08:29.020840Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:09:29.072241Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[126] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:10:29.128360Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:11:30.602434Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:12:30.662136Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:13:30.716397Z[WARNING][src/modbus/modbus_ctx.rs:958] slave[127] write_multiple_registers(address: 1040, data: [65286, 750, 64536, 64536, 64536, 64536]) timeout, retry 0/3
+2025-09-19T18:14:16.664759Z[ERROR][/usr/lib/python3.10/asyncio/base_events.py:1758] unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<main_async() done, defined at /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/trigger.py:198> exception=RCLError('failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241')>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1871, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/trigger.py", line 224, in main_async
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

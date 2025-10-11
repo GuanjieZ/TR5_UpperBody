@@ -1,0 +1,9 @@
+2025-09-17T10:54:50.073687Z[INFO][src/python/py_mod.rs:25] bc_stark_sdk version: 0.8.8
+2025-09-17T10:54:50.074858Z[INFO][src/stark/config.rs:30] Logging initialized with level: Info
+2025-09-17T10:54:50.075109Z[INFO][src/stark/config.rs:36] StarkSDK initialized, protocol_type: Modbus
+2025-09-17T10:54:51.220987Z[INFO][/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/trigger.py:119] Left: DeviceInfo { sku_type: MediumRight, serial_number: BCXRR2147J2500004, firmware_version: 0.0.10 }
+2025-09-17T10:54:52.227977Z[WARNING][src/stark/api.rs:1812] set_serialport_baudrate: Baud1Mbps
+2025-09-17T10:54:52.329845Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[127] write_single_register(address: 1001, value: 4) timeout, retry 0/3
+2025-09-17T10:54:52.431735Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[127] write_single_register(address: 1001, value: 4) timeout, retry 1/3
+2025-09-17T10:54:52.533797Z[WARNING][src/modbus/modbus_ctx.rs:715] slave[127] write_single_register(address: 1001, value: 4) timeout, retry 2/3
+2025-09-17T10:54:52.534284Z[INFO][src/python/py_device.rs:937] Error setting serialport baudrate: slave[127] write_single_register(address: 1001, value: 4) failed after 3 attempts

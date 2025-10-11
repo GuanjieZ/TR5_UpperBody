@@ -1,0 +1,345 @@
+[0.000000] (-) TimerEvent: {}
+[0.000913] (dex_hand) JobQueued: {'identifier': 'dex_hand', 'dependencies': OrderedDict()}
+[0.001146] (upper_body_demo) JobQueued: {'identifier': 'upper_body_demo', 'dependencies': OrderedDict()}
+[0.001184] (dex_hand) JobStarted: {'identifier': 'dex_hand'}
+[0.008939] (upper_body_demo) JobStarted: {'identifier': 'upper_body_demo'}
+[0.099637] (-) TimerEvent: {}
+[0.200077] (-) TimerEvent: {}
+[0.300529] (-) TimerEvent: {}
+[0.335888] (upper_body_demo) JobProgress: {'identifier': 'upper_body_demo', 'progress': 'cmake'}
+[0.336877] (upper_body_demo) JobProgress: {'identifier': 'upper_body_demo', 'progress': 'build'}
+[0.337770] (upper_body_demo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/niic/upper_body_demo/build/upper_body_demo', '--', '-j12', '-l12'], 'cwd': '/home/niic/upper_body_demo/build/upper_body_demo', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('LC_TIME', 'zh_CN.UTF-8'), ('USER', 'root'), ('HOME', '/root'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('DISPLAY', 'localhost:16.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build'), ('LC_NAME', 'zh_CN.UTF-8'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'niic'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/niic/upper_body_demo/build/upper_body_demo'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.396510] (upper_body_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target wave_hand_demo\x1b[0m\n'}
+[0.396895] (upper_body_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target teleop\x1b[0m\n'}
+[0.400613] (-) TimerEvent: {}
+[0.410272] (upper_body_demo) StdoutLine: {'line': b'[ 16%] Built target enable\n'}
+[0.432183] (upper_body_demo) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/wave_hand_demo.dir/src/wavehand/main.cpp.o\x1b[0m\n'}
+[0.432508] (upper_body_demo) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/wave_hand_demo.dir/src/wavehand/WaveHandDemo.cpp.o\x1b[0m\n'}
+[0.436552] (upper_body_demo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/armPosiSender.cpp.o\x1b[0m\n'}
+[0.436943] (upper_body_demo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/teleop.dir/src/teleop/main.cpp.o\x1b[0m\n'}
+[0.501038] (-) TimerEvent: {}
+[0.602041] (-) TimerEvent: {}
+[0.702534] (-) TimerEvent: {}
+[0.803574] (-) TimerEvent: {}
+[0.842119] (dex_hand) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/dex_hand', 'build', '--build-base', '/home/niic/upper_body_demo/build/dex_hand/build', 'install', '--record', '/home/niic/upper_body_demo/build/dex_hand/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/niic/upper_body_demo/src/dex_hand', 'env': {'SUDO_GID': '1000', 'MAIL': '/var/mail/root', 'LC_TIME': 'zh_CN.UTF-8', 'USER': 'root', 'HOME': '/root', 'LC_MONETARY': 'zh_CN.UTF-8', 'SUDO_UID': '1000', 'LOGNAME': 'root', 'TERM': 'xterm', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'LC_ADDRESS': 'zh_CN.UTF-8', 'DISPLAY': 'localhost:16.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SUDO_COMMAND': '/usr/bin/colcon build', 'LC_NAME': 'zh_CN.UTF-8', 'SHELL': '/bin/bash', 'SUDO_USER': 'niic', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'PWD': '/home/niic/upper_body_demo/build/dex_hand', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'PYTHONPATH': '/home/niic/upper_body_demo/build/dex_hand/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages:'}, 'shell': False}
+[0.903703] (-) TimerEvent: {}
+[1.004173] (-) TimerEvent: {}
+[1.104740] (-) TimerEvent: {}
+[1.151603] (dex_hand) StdoutLine: {'line': b'running egg_info\n'}
+[1.152732] (dex_hand) StdoutLine: {'line': b'writing ../../build/dex_hand/dex_hand.egg-info/PKG-INFO\n'}
+[1.153236] (dex_hand) StdoutLine: {'line': b'writing dependency_links to ../../build/dex_hand/dex_hand.egg-info/dependency_links.txt\n'}
+[1.153506] (dex_hand) StdoutLine: {'line': b'writing entry points to ../../build/dex_hand/dex_hand.egg-info/entry_points.txt\n'}
+[1.153739] (dex_hand) StdoutLine: {'line': b'writing requirements to ../../build/dex_hand/dex_hand.egg-info/requires.txt\n'}
+[1.153969] (dex_hand) StdoutLine: {'line': b'writing top-level names to ../../build/dex_hand/dex_hand.egg-info/top_level.txt\n'}
+[1.157045] (dex_hand) StdoutLine: {'line': b"reading manifest file '../../build/dex_hand/dex_hand.egg-info/SOURCES.txt'\n"}
+[1.158375] (dex_hand) StdoutLine: {'line': b"writing manifest file '../../build/dex_hand/dex_hand.egg-info/SOURCES.txt'\n"}
+[1.158728] (dex_hand) StdoutLine: {'line': b'running build\n'}
+[1.158870] (dex_hand) StdoutLine: {'line': b'running build_py\n'}
+[1.159522] (dex_hand) StdoutLine: {'line': b'running install\n'}
+[1.160134] (dex_hand) StdoutLine: {'line': b'running install_lib\n'}
+[1.162752] (dex_hand) StdoutLine: {'line': b'running install_data\n'}
+[1.163061] (dex_hand) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.166212] (dex_hand) StdoutLine: {'line': b"removing '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.166520] (dex_hand) StdoutLine: {'line': b'Copying ../../build/dex_hand/dex_hand.egg-info to /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info\n'}
+[1.168455] (dex_hand) StdoutLine: {'line': b'running install_scripts\n'}
+[1.202314] (dex_hand) StdoutLine: {'line': b'Installing rps_cam script to /home/niic/upper_body_demo/install/dex_hand/lib/dex_hand\n'}
+[1.202709] (dex_hand) StdoutLine: {'line': b'Installing rps_hand script to /home/niic/upper_body_demo/install/dex_hand/lib/dex_hand\n'}
+[1.203106] (dex_hand) StdoutLine: {'line': b'Installing trigger script to /home/niic/upper_body_demo/install/dex_hand/lib/dex_hand\n'}
+[1.203975] (dex_hand) StdoutLine: {'line': b"writing list of installed files to '/home/niic/upper_body_demo/build/dex_hand/install.log'\n"}
+[1.204964] (-) TimerEvent: {}
+[1.266844] (dex_hand) CommandEnded: {'returncode': 0}
+[1.283841] (dex_hand) JobEnded: {'identifier': 'dex_hand', 'rc': 0}
+[1.305113] (-) TimerEvent: {}
+[1.405965] (-) TimerEvent: {}
+[1.506444] (-) TimerEvent: {}
+[1.606941] (-) TimerEvent: {}
+[1.707415] (-) TimerEvent: {}
+[1.809115] (-) TimerEvent: {}
+[1.909619] (-) TimerEvent: {}
+[2.010136] (-) TimerEvent: {}
+[2.110614] (-) TimerEvent: {}
+[2.211110] (-) TimerEvent: {}
+[2.311597] (-) TimerEvent: {}
+[2.412106] (-) TimerEvent: {}
+[2.512605] (-) TimerEvent: {}
+[2.613146] (-) TimerEvent: {}
+[2.713635] (-) TimerEvent: {}
+[2.814127] (-) TimerEvent: {}
+[2.914723] (-) TimerEvent: {}
+[3.016008] (-) TimerEvent: {}
+[3.116549] (-) TimerEvent: {}
+[3.217030] (-) TimerEvent: {}
+[3.317489] (-) TimerEvent: {}
+[3.417963] (-) TimerEvent: {}
+[3.518446] (-) TimerEvent: {}
+[3.618923] (-) TimerEvent: {}
+[3.719371] (-) TimerEvent: {}
+[3.819844] (-) TimerEvent: {}
+[3.920303] (-) TimerEvent: {}
+[4.020754] (-) TimerEvent: {}
+[4.121253] (-) TimerEvent: {}
+[4.221720] (-) TimerEvent: {}
+[4.322207] (-) TimerEvent: {}
+[4.422670] (-) TimerEvent: {}
+[4.523145] (-) TimerEvent: {}
+[4.623659] (-) TimerEvent: {}
+[4.724125] (-) TimerEvent: {}
+[4.824592] (-) TimerEvent: {}
+[4.925089] (-) TimerEvent: {}
+[5.025574] (-) TimerEvent: {}
+[5.126045] (-) TimerEvent: {}
+[5.226503] (-) TimerEvent: {}
+[5.326986] (-) TimerEvent: {}
+[5.427449] (-) TimerEvent: {}
+[5.527953] (-) TimerEvent: {}
+[5.628420] (-) TimerEvent: {}
+[5.728869] (-) TimerEvent: {}
+[5.829324] (-) TimerEvent: {}
+[5.929816] (-) TimerEvent: {}
+[6.030272] (-) TimerEvent: {}
+[6.130737] (-) TimerEvent: {}
+[6.231201] (-) TimerEvent: {}
+[6.331672] (-) TimerEvent: {}
+[6.432148] (-) TimerEvent: {}
+[6.532623] (-) TimerEvent: {}
+[6.633110] (-) TimerEvent: {}
+[6.733565] (-) TimerEvent: {}
+[6.834101] (-) TimerEvent: {}
+[6.934597] (-) TimerEvent: {}
+[7.035118] (-) TimerEvent: {}
+[7.135559] (-) TimerEvent: {}
+[7.236030] (-) TimerEvent: {}
+[7.336491] (-) TimerEvent: {}
+[7.436970] (-) TimerEvent: {}
+[7.537434] (-) TimerEvent: {}
+[7.637866] (-) TimerEvent: {}
+[7.738320] (-) TimerEvent: {}
+[7.838792] (-) TimerEvent: {}
+[7.939233] (-) TimerEvent: {}
+[8.039688] (-) TimerEvent: {}
+[8.140157] (-) TimerEvent: {}
+[8.240610] (-) TimerEvent: {}
+[8.341071] (-) TimerEvent: {}
+[8.441507] (-) TimerEvent: {}
+[8.541993] (-) TimerEvent: {}
+[8.642444] (-) TimerEvent: {}
+[8.742883] (-) TimerEvent: {}
+[8.843320] (-) TimerEvent: {}
+[8.943782] (-) TimerEvent: {}
+[9.044231] (-) TimerEvent: {}
+[9.144741] (-) TimerEvent: {}
+[9.245195] (-) TimerEvent: {}
+[9.345645] (-) TimerEvent: {}
+[9.446110] (-) TimerEvent: {}
+[9.546564] (-) TimerEvent: {}
+[9.647047] (-) TimerEvent: {}
+[9.747502] (-) TimerEvent: {}
+[9.848002] (-) TimerEvent: {}
+[9.948449] (-) TimerEvent: {}
+[10.048861] (-) TimerEvent: {}
+[10.149321] (-) TimerEvent: {}
+[10.249842] (-) TimerEvent: {}
+[10.350303] (-) TimerEvent: {}
+[10.400483] (upper_body_demo) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX executable wave_hand_demo\x1b[0m\n'}
+[10.450443] (-) TimerEvent: {}
+[10.550950] (-) TimerEvent: {}
+[10.651435] (-) TimerEvent: {}
+[10.752172] (-) TimerEvent: {}
+[10.852724] (-) TimerEvent: {}
+[10.953238] (-) TimerEvent: {}
+[11.053688] (-) TimerEvent: {}
+[11.154142] (-) TimerEvent: {}
+[11.254588] (-) TimerEvent: {}
+[11.332333] (upper_body_demo) StdoutLine: {'line': b'[ 66%] Built target wave_hand_demo\n'}
+[11.354704] (-) TimerEvent: {}
+[11.455125] (-) TimerEvent: {}
+[11.555537] (-) TimerEvent: {}
+[11.655968] (-) TimerEvent: {}
+[11.756381] (-) TimerEvent: {}
+[11.856816] (-) TimerEvent: {}
+[11.957241] (-) TimerEvent: {}
+[12.057661] (-) TimerEvent: {}
+[12.158093] (-) TimerEvent: {}
+[12.258515] (-) TimerEvent: {}
+[12.358961] (-) TimerEvent: {}
+[12.459397] (-) TimerEvent: {}
+[12.559848] (-) TimerEvent: {}
+[12.660283] (-) TimerEvent: {}
+[12.760721] (-) TimerEvent: {}
+[12.861159] (-) TimerEvent: {}
+[12.961592] (-) TimerEvent: {}
+[13.062038] (-) TimerEvent: {}
+[13.162459] (-) TimerEvent: {}
+[13.206731] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[13.207097] (upper_body_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/niic/upper_body_demo/src/upper_body_demo/src/teleop/main.cpp:152:88:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<float, float>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 in GCC 10.1\n'}
+[13.207213] (upper_body_demo) StderrLine: {'line': b'  152 |           auto [lf, lb] = solveIK(ctx.target_q_rot[7],  ctx.target_q_rot[8], Side::Left\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[13.207310] (upper_body_demo) StderrLine: {'line': b'      |                                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.262566] (-) TimerEvent: {}
+[13.362972] (-) TimerEvent: {}
+[13.463398] (-) TimerEvent: {}
+[13.563830] (-) TimerEvent: {}
+[13.664260] (-) TimerEvent: {}
+[13.764691] (-) TimerEvent: {}
+[13.865106] (-) TimerEvent: {}
+[13.965528] (-) TimerEvent: {}
+[14.065981] (-) TimerEvent: {}
+[14.166444] (-) TimerEvent: {}
+[14.266863] (-) TimerEvent: {}
+[14.367277] (-) TimerEvent: {}
+[14.467698] (-) TimerEvent: {}
+[14.568131] (-) TimerEvent: {}
+[14.668547] (-) TimerEvent: {}
+[14.768964] (-) TimerEvent: {}
+[14.869370] (-) TimerEvent: {}
+[14.969790] (-) TimerEvent: {}
+[15.070204] (-) TimerEvent: {}
+[15.170630] (-) TimerEvent: {}
+[15.271072] (-) TimerEvent: {}
+[15.371506] (-) TimerEvent: {}
+[15.471908] (-) TimerEvent: {}
+[15.572314] (-) TimerEvent: {}
+[15.672719] (-) TimerEvent: {}
+[15.773137] (-) TimerEvent: {}
+[15.873541] (-) TimerEvent: {}
+[15.973941] (-) TimerEvent: {}
+[16.074331] (-) TimerEvent: {}
+[16.174739] (-) TimerEvent: {}
+[16.275162] (-) TimerEvent: {}
+[16.375575] (-) TimerEvent: {}
+[16.475994] (-) TimerEvent: {}
+[16.576415] (-) TimerEvent: {}
+[16.676843] (-) TimerEvent: {}
+[16.777248] (-) TimerEvent: {}
+[16.877664] (-) TimerEvent: {}
+[16.978088] (-) TimerEvent: {}
+[17.078520] (-) TimerEvent: {}
+[17.178934] (-) TimerEvent: {}
+[17.279339] (-) TimerEvent: {}
+[17.379757] (-) TimerEvent: {}
+[17.480200] (-) TimerEvent: {}
+[17.580635] (-) TimerEvent: {}
+[17.681085] (-) TimerEvent: {}
+[17.781478] (-) TimerEvent: {}
+[17.881839] (-) TimerEvent: {}
+[17.982250] (-) TimerEvent: {}
+[18.082671] (-) TimerEvent: {}
+[18.183107] (-) TimerEvent: {}
+[18.283491] (-) TimerEvent: {}
+[18.383846] (-) TimerEvent: {}
+[18.484273] (-) TimerEvent: {}
+[18.584719] (-) TimerEvent: {}
+[18.685151] (-) TimerEvent: {}
+[18.785560] (-) TimerEvent: {}
+[18.885987] (-) TimerEvent: {}
+[18.986382] (-) TimerEvent: {}
+[19.086806] (-) TimerEvent: {}
+[19.187216] (-) TimerEvent: {}
+[19.287651] (-) TimerEvent: {}
+[19.388093] (-) TimerEvent: {}
+[19.488505] (-) TimerEvent: {}
+[19.588941] (-) TimerEvent: {}
+[19.689377] (-) TimerEvent: {}
+[19.789794] (-) TimerEvent: {}
+[19.890213] (-) TimerEvent: {}
+[19.990657] (-) TimerEvent: {}
+[20.091083] (-) TimerEvent: {}
+[20.191507] (-) TimerEvent: {}
+[20.291952] (-) TimerEvent: {}
+[20.392380] (-) TimerEvent: {}
+[20.492786] (-) TimerEvent: {}
+[20.593223] (-) TimerEvent: {}
+[20.693662] (-) TimerEvent: {}
+[20.794123] (-) TimerEvent: {}
+[20.894543] (-) TimerEvent: {}
+[20.994977] (-) TimerEvent: {}
+[21.095403] (-) TimerEvent: {}
+[21.195839] (-) TimerEvent: {}
+[21.254962] (upper_body_demo) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable teleop\x1b[0m\n'}
+[21.295956] (-) TimerEvent: {}
+[21.396393] (-) TimerEvent: {}
+[21.496846] (-) TimerEvent: {}
+[21.597285] (-) TimerEvent: {}
+[21.697725] (-) TimerEvent: {}
+[21.798191] (-) TimerEvent: {}
+[21.898641] (-) TimerEvent: {}
+[21.999096] (-) TimerEvent: {}
+[22.099533] (-) TimerEvent: {}
+[22.199978] (-) TimerEvent: {}
+[22.300423] (-) TimerEvent: {}
+[22.400854] (-) TimerEvent: {}
+[22.501279] (-) TimerEvent: {}
+[22.601691] (-) TimerEvent: {}
+[22.702114] (-) TimerEvent: {}
+[22.802531] (-) TimerEvent: {}
+[22.902965] (-) TimerEvent: {}
+[23.003376] (-) TimerEvent: {}
+[23.023369] (upper_body_demo) StdoutLine: {'line': b'[100%] Built target teleop\n'}
+[23.037350] (upper_body_demo) CommandEnded: {'returncode': 0}
+[23.038665] (upper_body_demo) JobProgress: {'identifier': 'upper_body_demo', 'progress': 'install'}
+[23.048905] (upper_body_demo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/niic/upper_body_demo/build/upper_body_demo'], 'cwd': '/home/niic/upper_body_demo/build/upper_body_demo', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('LC_TIME', 'zh_CN.UTF-8'), ('USER', 'root'), ('HOME', '/root'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('DISPLAY', 'localhost:16.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build'), ('LC_NAME', 'zh_CN.UTF-8'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'niic'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/niic/upper_body_demo/build/upper_body_demo'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[23.058456] (upper_body_demo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.059377] (upper_body_demo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[23.059944] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/lib/upper_body_demo/wave_hand_demo\n'}
+[23.060145] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/lib/upper_body_demo/teleop\n'}
+[23.060334] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/lib/upper_body_demo/enable\n'}
+[23.060989] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/ament_index/resource_index/package_run_dependencies/upper_body_demo\n'}
+[23.061627] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/ament_index/resource_index/parent_prefix_path/upper_body_demo\n'}
+[23.062076] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/environment/ament_prefix_path.sh\n'}
+[23.062287] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/environment/ament_prefix_path.dsv\n'}
+[23.062687] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/environment/path.sh\n'}
+[23.062905] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/environment/path.dsv\n'}
+[23.063283] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/local_setup.bash\n'}
+[23.063673] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/local_setup.sh\n'}
+[23.064137] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/local_setup.zsh\n'}
+[23.064358] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/local_setup.dsv\n'}
+[23.064503] (upper_body_demo) StdoutLine: {'line': b'-- Symlinking: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.dsv\n'}
+[23.074802] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/ament_index/resource_index/packages/upper_body_demo\n'}
+[23.075396] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/cmake/upper_body_demoConfig.cmake\n'}
+[23.075733] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/cmake/upper_body_demoConfig-version.cmake\n'}
+[23.075958] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/niic/upper_body_demo/install/upper_body_demo/share/upper_body_demo/package.xml\n'}
+[23.076295] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo\n'}
+[23.076614] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat\n'}
+[23.076889] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/error.hpp\n'}
+[23.077040] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/thread_mutex.hpp\n'}
+[23.077191] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/master.hpp\n'}
+[23.077339] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/eni_config.hpp\n'}
+[23.077481] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/types.hpp\n'}
+[23.077568] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/ipc.hpp\n'}
+[23.077670] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/pwm.hpp\n'}
+[23.077811] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/slice.hpp\n'}
+[23.077974] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/buffer_locked.hpp\n'}
+[23.078124] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/task_collaborative.hpp\n'}
+[23.078264] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/sdo_request.hpp\n'}
+[23.078392] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/log.hpp\n'}
+[23.078478] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/reg_request.hpp\n'}
+[23.078558] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail\n'}
+[23.078636] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/config.hpp\n'}
+[23.078714] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/os_string.hpp\n'}
+[23.078806] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/logger.hpp\n'}
+[23.078933] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/ioctl.hpp\n'}
+[23.079061] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/file.hpp\n'}
+[23.079180] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/log_handler.hpp\n'}
+[23.079271] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/utility.hpp\n'}
+[23.079352] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/thread.hpp\n'}
+[23.079431] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/sii_crc.hpp\n'}
+[23.079509] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/detail/esi_index.hpp\n'}
+[23.079588] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/dc.hpp\n'}
+[23.079665] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/task.hpp\n'}
+[23.079743] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/version.hpp\n'}
+[23.079835] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/run_time_stat.hpp\n'}
+[23.079928] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/thread_rtlock.hpp\n'}
+[23.080006] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/task_assist.hpp\n'}
+[23.080084] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/slave_config.hpp\n'}
+[23.080169] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/buffer_rtlocked.hpp\n'}
+[23.080252] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/rokae\n'}
+[23.080332] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/rokae/extra.hpp\n'}
+[23.080410] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/s2s_func.hpp\n'}
+[23.080487] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/niic_api.hpp\n'}
+[23.080562] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/algorithm_threads.hpp\n'}
+[23.080639] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/spi_io.hpp\n'}
+[23.080716] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/buffer.hpp\n'}
+[23.080848] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/ecat/task_interface.hpp\n'}
+[23.080932] (upper_body_demo) StdoutLine: {'line': b'-- Up-to-date: /home/niic/upper_body_demo/install/upper_body_demo/include/upper_body_demo/upper_body_demo\n'}
+[23.081946] (upper_body_demo) CommandEnded: {'returncode': 0}
+[23.100503] (upper_body_demo) JobEnded: {'identifier': 'upper_body_demo', 'rc': 0}
+[23.101603] (-) EventReactorShutdown: {}

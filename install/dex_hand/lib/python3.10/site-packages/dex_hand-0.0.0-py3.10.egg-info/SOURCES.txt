@@ -11,7 +11,8 @@ setup.py
 dex_hand/__init__.py
 dex_hand/logger.py
 dex_hand/revo2_utils.py
-dex_hand/rps.py
+dex_hand/rps_cam.py
+dex_hand/rps_hand.py
 dex_hand/trigger.py
 dex_hand/utils.py
 resource/dex_hand

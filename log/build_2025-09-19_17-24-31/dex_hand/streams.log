@@ -1,0 +1,23 @@
+[1.021s] Invoking command in '/home/niic/upper_body_demo/src/dex_hand': PYTHONPATH=/home/niic/upper_body_demo/build/dex_hand/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dex_hand build --build-base /home/niic/upper_body_demo/build/dex_hand/build install --record /home/niic/upper_body_demo/build/dex_hand/install.log --single-version-externally-managed install_data
+[1.403s] running egg_info
+[1.404s] writing ../../build/dex_hand/dex_hand.egg-info/PKG-INFO
+[1.405s] writing dependency_links to ../../build/dex_hand/dex_hand.egg-info/dependency_links.txt
+[1.405s] writing entry points to ../../build/dex_hand/dex_hand.egg-info/entry_points.txt
+[1.405s] writing requirements to ../../build/dex_hand/dex_hand.egg-info/requires.txt
+[1.405s] writing top-level names to ../../build/dex_hand/dex_hand.egg-info/top_level.txt
+[1.408s] reading manifest file '../../build/dex_hand/dex_hand.egg-info/SOURCES.txt'
+[1.409s] writing manifest file '../../build/dex_hand/dex_hand.egg-info/SOURCES.txt'
+[1.410s] running build
+[1.410s] running build_py
+[1.410s] running install
+[1.411s] running install_lib
+[1.414s] running install_data
+[1.414s] running install_egg_info
+[1.416s] removing '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info' (and everything under it)
+[1.417s] Copying ../../build/dex_hand/dex_hand.egg-info to /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info
+[1.418s] running install_scripts
+[1.450s] Installing rps_cam script to /home/niic/upper_body_demo/install/dex_hand/lib/dex_hand
+[1.450s] Installing rps_hand script to /home/niic/upper_body_demo/install/dex_hand/lib/dex_hand
+[1.450s] Installing trigger script to /home/niic/upper_body_demo/install/dex_hand/lib/dex_hand
+[1.451s] writing list of installed files to '/home/niic/upper_body_demo/build/dex_hand/install.log'
+[1.501s] Invoked command in '/home/niic/upper_body_demo/src/dex_hand' returned '0': PYTHONPATH=/home/niic/upper_body_demo/build/dex_hand/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/dex_hand build --build-base /home/niic/upper_body_demo/build/dex_hand/build install --record /home/niic/upper_body_demo/build/dex_hand/install.log --single-version-externally-managed install_data

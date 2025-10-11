@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/dex_hand/dex_hand.egg-info/PKG-INFO
+writing dependency_links to ../../build/dex_hand/dex_hand.egg-info/dependency_links.txt
+writing entry points to ../../build/dex_hand/dex_hand.egg-info/entry_points.txt
+writing requirements to ../../build/dex_hand/dex_hand.egg-info/requires.txt
+writing top-level names to ../../build/dex_hand/dex_hand.egg-info/top_level.txt
+reading manifest file '../../build/dex_hand/dex_hand.egg-info/SOURCES.txt'
+writing manifest file '../../build/dex_hand/dex_hand.egg-info/SOURCES.txt'
+running build
+running build_py
+copying dex_hand/rps_hand.py -> /home/niic/upper_body_demo/build/dex_hand/build/lib/dex_hand
+running install
+running install_lib
+copying /home/niic/upper_body_demo/build/dex_hand/build/lib/dex_hand/rps_hand.py -> /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand
+byte-compiling /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/rps_hand.py to rps_hand.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info' (and everything under it)
+error removing /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info: [Errno 13] Permission denied: '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info/dependency_links.txt'
+error removing /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info: [Errno 13] Permission denied: '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info/requires.txt'
+error removing /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info: [Errno 13] Permission denied: '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info/SOURCES.txt'
+error removing /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info: [Errno 13] Permission denied: '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info/zip-safe'
+error removing /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info: [Errno 13] Permission denied: '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info/entry_points.txt'
+error removing /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info: [Errno 13] Permission denied: '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info/top_level.txt'
+error removing /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info: [Errno 13] Permission denied: '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info/PKG-INFO'
+error removing /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info: [Errno 39] Directory not empty: '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info'
+Copying ../../build/dex_hand/dex_hand.egg-info to /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info
+error: [Errno 13] Permission denied: '/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info/dependency_links.txt'

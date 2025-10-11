@@ -189,7 +189,7 @@ public:
     shift_time_ = this->declare_parameter<int64_t>("shift_time", 300'000);
     log_level_  = this->declare_parameter<int>("log_level", 0);
     priority_   = this->declare_parameter<int>("priority", 90);
-    affinity_   = this->declare_parameter<int>("affinity", 1);
+    affinity_   = this->declare_parameter<int>("affinity", 2);
     op_mode_    = this->declare_parameter<int>("op_mode", 9);
     master_id_  = this->declare_parameter<int>("master_id", 0);
 

@@ -1,13 +1,15 @@
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/revo2_utils.py
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/trigger.py
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/__init__.py
-/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/rps.py
+/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/rps_hand.py
+/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/rps_cam.py
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/utils.py
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/logger.py
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/__pycache__/revo2_utils.cpython-310.pyc
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/__pycache__/trigger.cpython-310.pyc
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/__pycache__/__init__.cpython-310.pyc
-/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/__pycache__/rps.cpython-310.pyc
+/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/__pycache__/rps_hand.cpython-310.pyc
+/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/__pycache__/rps_cam.cpython-310.pyc
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/__pycache__/utils.cpython-310.pyc
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/__pycache__/logger.cpython-310.pyc
 /home/niic/upper_body_demo/install/dex_hand/share/ament_index/resource_index/packages/dex_hand
@@ -19,5 +21,6 @@
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info/entry_points.txt
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info/top_level.txt
 /home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand-0.0.0-py3.10.egg-info/PKG-INFO
-/home/niic/upper_body_demo/install/dex_hand/lib/dex_hand/rps
+/home/niic/upper_body_demo/install/dex_hand/lib/dex_hand/rps_cam
+/home/niic/upper_body_demo/install/dex_hand/lib/dex_hand/rps_hand
 /home/niic/upper_body_demo/install/dex_hand/lib/dex_hand/trigger
