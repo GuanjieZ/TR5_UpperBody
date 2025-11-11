@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/niic/upper_body_demo/build/upper_body_demo/wave_hand_demo" "/home/niic/upper_body_demo/build/upper_body_demo/teleop" "/home/niic/upper_body_demo/build/upper_body_demo/enable" "TARGETS" "wave_hand_demo" "teleop" "enable" "DESTINATION" "lib/upper_body_demo")

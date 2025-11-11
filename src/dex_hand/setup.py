@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             'trigger = dex_hand.trigger:main',
             'rps_hand = dex_hand.rps_hand:main',
-            'rps_cam = dex_hand.rps_cam:main'
+            'rps_cam = dex_hand.rps_cam:main',
+            'five_one_trigger = dex_hand.five_one_trigger:main',
         ],
     },
 )

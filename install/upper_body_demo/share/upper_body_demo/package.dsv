@@ -1,8 +1,0 @@
-source;share/upper_body_demo/hook/cmake_prefix_path.ps1
-source;share/upper_body_demo/hook/cmake_prefix_path.dsv
-source;share/upper_body_demo/hook/cmake_prefix_path.sh
-source;share/upper_body_demo/local_setup.bash
-source;share/upper_body_demo/local_setup.dsv
-source;share/upper_body_demo/local_setup.ps1
-source;share/upper_body_demo/local_setup.sh
-source;share/upper_body_demo/local_setup.zsh

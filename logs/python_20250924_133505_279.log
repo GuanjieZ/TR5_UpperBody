@@ -1,3 +1,0 @@
-2025-09-24T13:35:05.283649Z[INFO][src/python/py_mod.rs:25] bc_stark_sdk version: 0.8.8
-2025-09-24T13:35:05.284808Z[INFO][src/stark/config.rs:30] Logging initialized with level: Info
-2025-09-24T13:35:05.285052Z[INFO][src/stark/config.rs:36] StarkSDK initialized, protocol_type: Modbus

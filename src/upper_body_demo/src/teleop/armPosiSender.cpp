@@ -24,8 +24,8 @@ armPosiSender::armPosiSender(axis_data& axis,
   , _init_pos(0)
   , _last_step(-1)
   , _print_cnt(0)
-  , _max_rot_accl(1.0472*10/1000.0)
-  , _max_rot_vel(1.0472/1)
+  , _max_rot_accl(1.0*10/1000.0)
+  , _max_rot_vel(2.617/1)
   , _max_lin_accl(20.0*10/1000.0)
   , _max_lin_vel(20.0/1)
 
@@ -41,11 +41,11 @@ void armPosiSender::on_cycle() {
 
     // 2) Enable/disable per list
     // _power.enable = _ctx.enable_flags[_axis.joint_id];
-    // if (_axis.joint_id != 8)_power.enable = _ctx.enable_flags[_axis.joint_id];
-    // else _power.enable = false;
+    if (_axis.joint_id > 1 && _axis.joint_id <= 6)_power.enable = _ctx.enable_flags[_axis.joint_id];
+    //else _power.enable = false;
 
     if (_axis.joint_id > 8)_power.enable = _ctx.enable_flags[_axis.joint_id];
-    else _power.enable = false;
+    // else _power.enable = false;
     
     // if (_print_cnt % 500 == 0) {
     // spdlog::info("joint:{} | pos:{:07d} | vel:{:07d} | cmd_vel:{:6.4f} | tgt_vel:{:6.4f} | enable:{}",
@@ -63,7 +63,9 @@ void armPosiSender::on_cycle() {
 
     if (is_rot(get_joint())) {
         // record joint state
-        _ctx.q[get_joint()] = enc2ang(*_axis.position_actual_value, _ctx.joint_zero_posi[get_joint()]);
+        int actualPosi = *_axis.position_actual_value;
+        if (get_joint() == 3) actualPosi = ((actualPosi % 131071) + 131071) % 131071;
+        _ctx.q[get_joint()] = enc2ang(actualPosi, _ctx.joint_zero_posi[get_joint()]);
         _ctx.q_rot[get_joint()] = _ctx.q[get_joint()];
 
         // update command velocity
@@ -94,8 +96,10 @@ void armPosiSender::on_cycle() {
     
 
     if (_print_cnt % 500 == 0) {
-    spdlog::info("joint:{} | q:{:8.5f} | tgt_q:{:8.5f} | vel:{:07d} | cmd_vel:{:8.5f} | tgt_vel:{:8.5f} | enable:{}",
-            _axis.joint_name,
+    spdlog::info("joint:{} | raw:{} | q:{:8.5f} | tgt_q:{:8.5f} | vel:{:07d} | cmd_vel:{:8.5f} | tgt_vel:{:8.5f} | enable:{}",
+            // _axis.joint_name,
+            get_joint(),
+            *_axis.position_actual_value,
             _ctx.q[_axis.joint_id],
             _ctx.target_q[_axis.joint_id],
             *_axis.velocity_actual_value,

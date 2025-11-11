@@ -174,7 +174,11 @@ public:
     joint_enable_sub_ = this->create_subscription<std_msgs::msg::Bool>(
       "enable", 1,
       [this](const std_msgs::msg::Bool::SharedPtr msg) {
-        ctx.enable_flags.fill(msg->data);
+        ctx.enable_flags = {
+            false, false, // head
+            msg->data, msg->data, msg->data, msg->data, msg->data, false, false, // left arm
+            false, msg->data, msg->data, msg->data, msg->data, false, false  // right arm
+        };
         ctx.q_err.fill(0.0);
         ctx.command_q_dot.fill(0.0);
       });
@@ -189,7 +193,7 @@ public:
     shift_time_ = this->declare_parameter<int64_t>("shift_time", 300'000);
     log_level_  = this->declare_parameter<int>("log_level", 0);
     priority_   = this->declare_parameter<int>("priority", 90);
-    affinity_   = this->declare_parameter<int>("affinity", 2);
+    affinity_   = this->declare_parameter<int>("affinity", 1);
     op_mode_    = this->declare_parameter<int>("op_mode", 9);
     master_id_  = this->declare_parameter<int>("master_id", 0);
 

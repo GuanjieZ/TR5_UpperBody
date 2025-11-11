@@ -1,5 +1,0 @@
-2025-09-15T17:10:01.226730Z[INFO][src/python/py_mod.rs:25] bc_stark_sdk version: 0.8.8
-2025-09-15T17:10:01.227893Z[INFO][src/stark/config.rs:30] Logging initialized with level: Info
-2025-09-15T17:10:01.228135Z[INFO][src/stark/config.rs:36] StarkSDK initialized, protocol_type: Modbus
-2025-09-15T17:10:01.366205Z[WARNING][src/serial/base.rs:47] enable_low_latency failed: Os { code: 25, kind: Uncategorized, message: "Inappropriate ioctl for device" }
-2025-09-15T17:10:02.380023Z[INFO][/home/niic/upper_body_demo/install/dex_hand/lib/python3.10/site-packages/dex_hand/trigger.py:118] Left: DeviceInfo { sku_type: MediumRight, serial_number: BCXRR2147J2500004, firmware_version: 0.0.10 }

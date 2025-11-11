@@ -1,5 +1,0 @@
-[console_scripts]
-rps_cam = dex_hand.rps_cam:main
-rps_hand = dex_hand.rps_hand:main
-trigger = dex_hand.trigger:main
-
