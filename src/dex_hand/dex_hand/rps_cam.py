@@ -8,8 +8,12 @@ import mediapipe as mp
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
+import pyrealsense2 as rs
+import numpy as np
 
 mp_hands = mp.solutions.hands
+mp_drawing = mp.solutions.drawing_utils
+
 FINGER_TIPS = [4, 8, 12, 16, 20]
 FINGER_PIPS = [3, 6, 10, 14, 18]
 
@@ -34,15 +38,78 @@ def count_fingers(hand, handedness_label, w, h, mirrored=True):
 
     return fingers  # [thumb, index, middle, ring, pinky]
 
-def rps_gesture(fingers):
-    s = sum(fingers)
-    if s == 0:
+def angle_between(a, b, c):
+    """
+    Returns the angle ABC (in degrees) where A, B, C are 3D points.
+    """
+    ab = a - b
+    cb = c - b
+    denom = (np.linalg.norm(ab) * np.linalg.norm(cb) + 1e-6)
+    cosang = np.dot(ab, cb) / denom
+    cosang = np.clip(cosang, -1.0, 1.0)
+    return np.degrees(np.arccos(cosang))
+
+
+def finger_is_extended_3d(landmarks, mcp_idx, pip_idx, dip_idx):
+    """
+    Decide if a finger is extended using the angle at the PIP joint.
+
+    landmarks: results.multi_hand_landmarks[0].landmark
+    """
+    p_mcp = np.array([
+        landmarks[mcp_idx].x,
+        landmarks[mcp_idx].y,
+        landmarks[mcp_idx].z
+    ], dtype=np.float32)
+
+    p_pip = np.array([
+        landmarks[pip_idx].x,
+        landmarks[pip_idx].y,
+        landmarks[pip_idx].z
+    ], dtype=np.float32)
+
+    p_dip = np.array([
+        landmarks[dip_idx].x,
+        landmarks[dip_idx].y,
+        landmarks[dip_idx].z
+    ], dtype=np.float32)
+
+    print(p_mcp)
+    # print(p_pip)
+    # print(p_dip)
+    
+    ang = angle_between(p_mcp, p_pip, p_dip)
+    # Straight finger ≈ 160–180°, curled ≈ smaller.
+    return ang > 160
+
+def classify_rps_angles_3d(hand_landmarks):
+    lm = hand_landmarks.landmark
+
+    # index, middle, ring, pinky
+    # thumb_ang  = finger_is_extended_3d(lm, 1, 2, 3)
+    index_ang  = finger_is_extended_3d(lm, 5, 6, 7)
+    middle_ang = finger_is_extended_3d(lm, 9, 10, 11)
+    ring_ang   = finger_is_extended_3d(lm, 13, 14, 15)
+    pinky_ang  = finger_is_extended_3d(lm, 17, 18, 19)
+
+    fingers = np.array([index_ang, middle_ang, ring_ang, pinky_ang])
+    n_open = np.sum(fingers)
+    
+    print(fingers)
+    
+    # ROCK: all 4 closed
+    if n_open == 0:
         return "rock"
-    if s == 5:
+
+    # PAPER: all 4 open
+    if n_open == 4:
         return "paper"
-    if fingers[1] and fingers[2] and not fingers[0] and not fingers[3] and not fingers[4]:
+
+    # SCISSORS: index & middle open, ring & pinky closed
+    if index_ang and middle_ang and not ring_ang and not pinky_ang:
         return "scissors"
-    return "none"
+
+    return "unknown"
 
 # ADDED: compute pixel-space bounding box area for a hand
 def hand_bbox_area(hand_landmarks, w, h):
@@ -125,8 +192,7 @@ class RPSGestureNode(Node):
             hand = res.multi_hand_landmarks[best_idx]
             handed_label = res.multi_handedness[best_idx].classification[0].label  # "Left"/"Right"
 
-            fingers = count_fingers(hand, handed_label, w, h, mirrored=True)
-            gesture = rps_gesture(fingers)
+            gesture = classify_rps_angles_3d(hand)
 
         # Publish only on change to reduce chatter
         if (gesture != self.last_gesture) and (gesture != "none"):  # CHANGED: use logical and

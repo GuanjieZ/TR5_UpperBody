@@ -147,7 +147,10 @@ public:
             ctx.target_q_rot[i+2] = msg->position[i];
             if (is_rot(i+2)) ctx.target_q[i+2] = msg->position[i];
           }
-
+	  ctx.target_q[0] = msg->position[15];
+	  ctx.target_q[1] = -msg->position[14];
+          //std::cout << "test aaa " << msg->position[14] << std::endl;
+	  //std::cout << "test bbb " << msg->position[15] << std::endl;
           // rot to linear conversion
           auto [lf, lb] = solveIK(ctx.target_q_rot[7],  ctx.target_q_rot[8], Side::Left);
           ctx.target_q[7]  = lf; ctx.target_q[8]  = lb;
@@ -175,9 +178,9 @@ public:
       "enable", 1,
       [this](const std_msgs::msg::Bool::SharedPtr msg) {
         ctx.enable_flags = {
-            false, false, // head
+            false, msg->data, // head
             msg->data, msg->data, msg->data, msg->data, msg->data, false, false, // left arm
-            false, msg->data, msg->data, msg->data, msg->data, false, false  // right arm
+            msg->data, msg->data, msg->data, msg->data, msg->data, false, false  // right arm
         };
         ctx.q_err.fill(0.0);
         ctx.command_q_dot.fill(0.0);

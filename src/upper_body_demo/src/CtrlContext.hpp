@@ -37,8 +37,8 @@ struct CtrlContext {
     std::array<float, num_joints> q{};
     std::array<float, num_joints> q_rot{};
     std::array<float, num_joints> target_q{0.00000, 0.00000,
-                                           0.0, 0.27286, 0.0, -0.1, 0.0, 13.38606, 14.08255,
-                                           -0.0, -0.27286, 0.0, 0.1, 0.0, 13.38606, 14.08255};
+                                           0.0, 0.2, 0.0, -0.1, 0.0, 13.07943, 16.24759,
+                                           0.0, -0.2, 0.0, 0.1, 0.0, 18.52300, 22.47513};
     std::array<float, num_joints> old_target_q{};
     std::array<float, num_joints> target_q_rot{};
     std::array<float, num_joints> target_q_dot{};

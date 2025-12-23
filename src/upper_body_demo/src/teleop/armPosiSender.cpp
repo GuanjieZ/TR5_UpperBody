@@ -41,7 +41,7 @@ void armPosiSender::on_cycle() {
 
     // 2) Enable/disable per list
     // _power.enable = _ctx.enable_flags[_axis.joint_id];
-    if (_axis.joint_id > 1 && _axis.joint_id <= 6)_power.enable = _ctx.enable_flags[_axis.joint_id];
+    if (_axis.joint_id >= 1 && _axis.joint_id <= 8)_power.enable = _ctx.enable_flags[_axis.joint_id];
     //else _power.enable = false;
 
     if (_axis.joint_id > 8)_power.enable = _ctx.enable_flags[_axis.joint_id];

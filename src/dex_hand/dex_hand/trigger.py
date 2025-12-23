@@ -40,7 +40,8 @@ class Revo2Node(Node):
         self.declare_parameter("grasp", [400, 750, 500, 0, 0, 0])
         
         self._current_right = [0, 750, -500, -500, -500, -500]
-        self._current_left = [0, 750, -500, -500, -500, -500]
+        self._current_left = [250, 750, 1000, 1000, 1000, 1000]
+        #self._current_left = [0, 750, -500, -500, -500, -500]
 
         self._port: str = self.get_parameter("port").get_parameter_value().string_value
         self._baud = _baud_from_param(self.get_parameter("baudrate").get_parameter_value().string_value)
@@ -88,7 +89,8 @@ class Revo2Node(Node):
         self._current_right = [int((msg.data-0.5)*500), 750, int((msg.data-0.5)*2000), int((msg.data-0.5)*2000), int((msg.data-0.5)*2000), int((msg.data-0.5)*2000)]
 
     def _lh_trig_callback(self, msg: Float64):
-        self._current_left = [int((msg.data-0.5)*500), 750, int((msg.data-0.5)*2000), int((msg.data-0.5)*2000), int((msg.data-0.5)*2000), int((msg.data-0.5)*2000)]
+        self._current_left = [250, 750, 1000, 1000, 1000, 1000]
+        #self._current_left = [int((msg.data-0.5)*500), 750, int((msg.data-0.5)*2000), int((msg.data-0.5)*2000), int((msg.data-0.5)*2000), int((msg.data-0.5)*2000)]
     
     def _on_param_set(self, params):
         for p in params:
