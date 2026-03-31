@@ -28,6 +28,8 @@ private:
   bool   _initialized;
   int    _init_pos;
   int    _last_step;
+  bool   _has_last_actual_posi;
+  int    _last_actual_posi;
   int    _print_cnt;
   float  _max_rot_accl; // rad/s/ms
   float  _max_rot_vel; // rad/s

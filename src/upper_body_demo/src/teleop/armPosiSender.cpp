@@ -23,6 +23,8 @@ armPosiSender::armPosiSender(axis_data& axis,
   , _initialized(false)
   , _init_pos(0)
   , _last_step(-1)
+  , _has_last_actual_posi(false)
+  , _last_actual_posi(0)
   , _print_cnt(0)
   , _max_rot_accl(1.0*10/1000.0)
   , _max_rot_vel(2.617/1)
@@ -34,10 +36,13 @@ armPosiSender::armPosiSender(axis_data& axis,
 void armPosiSender::on_cycle() { 
     
     bool is_test = true;
+    const int joint = get_joint();
+    constexpr int kEncCycle = 131071;
     _print_cnt++;
     _print_cnt = _print_cnt % 100000;
+
     // 1) Safety checks
-    if (!*_axis.position_actual_value) return;
+    if (!*_axis.position_actual_value || *_axis.position_actual_value == 131071) return;
 
     // 2) Enable/disable per list
     // _power.enable = _ctx.enable_flags[_axis.joint_id];
@@ -47,26 +52,28 @@ void armPosiSender::on_cycle() {
     if (_axis.joint_id > 8)_power.enable = _ctx.enable_flags[_axis.joint_id];
     // else _power.enable = false;
     
-    // if (_print_cnt % 500 == 0) {
-    // spdlog::info("joint:{} | pos:{:07d} | vel:{:07d} | cmd_vel:{:6.4f} | tgt_vel:{:6.4f} | enable:{}",
-    //         _axis.joint_name,
-    //         *_axis.position_actual_value,
-    //         *_axis.velocity_actual_value,
-    //         _ctx.command_q_dot[_axis.joint_id],
-    //         _ctx.target_q_dot[_axis.joint_id],
-    //         _ctx.enable_flags[_axis.joint_id]
-    //         );
-    //     if (_axis.axis_id == 15){
-    //         spdlog::info("    ");
-    //     }
-    // }
 
-    if (is_rot(get_joint())) {
+    int actualPosi = *_axis.position_actual_value;
+    if (joint == 3) {
+        actualPosi = ((actualPosi % kEncCycle) + kEncCycle) % kEncCycle;
+    }
+    if (_has_last_actual_posi) {
+        int delta = actualPosi - _last_actual_posi;
+        if (joint == 3) {
+            if (delta > kEncCycle / 2) delta -= kEncCycle;
+            if (delta < -kEncCycle / 2) delta += kEncCycle;
+        }
+        if (std::abs(delta) > 500) {
+            actualPosi = _last_actual_posi;
+            spdlog::info("Joint {}: Encoder reading is inconsistent, reverting to last known position: {}", joint, _last_actual_posi);
+        }
+    }
+
+    if (is_rot(joint)) {
         // record joint state
-        int actualPosi = *_axis.position_actual_value;
-        if (get_joint() == 3) actualPosi = ((actualPosi % 131071) + 131071) % 131071;
-        _ctx.q[get_joint()] = enc2ang(actualPosi, _ctx.joint_zero_posi[get_joint()]);
-        _ctx.q_rot[get_joint()] = _ctx.q[get_joint()];
+        int actualPosiForCalc = actualPosi;
+        _ctx.q[joint] = enc2ang(actualPosiForCalc, _ctx.joint_zero_posi[joint]);
+        _ctx.q_rot[joint] = _ctx.q[joint];
 
         // update command velocity
         float err = (_ctx.target_q[_axis.joint_id] - _ctx.q[_axis.joint_id]); 
@@ -80,7 +87,7 @@ void armPosiSender::on_cycle() {
 
     } else {
         // record joint state
-        _ctx.q[get_joint()] = enc2len(*_axis.position_actual_value, _ctx.joint_zero_posi[get_joint()]);
+        _ctx.q[joint] = enc2len(actualPosi, _ctx.joint_zero_posi[joint]);
 
         // update command velocity
         float err = (_ctx.target_q[_axis.joint_id] - _ctx.q[_axis.joint_id]);
@@ -93,13 +100,14 @@ void armPosiSender::on_cycle() {
         *_axis.target_velocity = len2enc_vel(_ctx.command_q_dot[_axis.joint_id]);
     }
 
-    
+    _last_actual_posi = actualPosi;
+    _has_last_actual_posi = true;
 
     if (_print_cnt % 500 == 0) {
     spdlog::info("joint:{} | raw:{} | q:{:8.5f} | tgt_q:{:8.5f} | vel:{:07d} | cmd_vel:{:8.5f} | tgt_vel:{:8.5f} | enable:{}",
             // _axis.joint_name,
-            get_joint(),
-            *_axis.position_actual_value,
+            joint,
+            actualPosi,
             _ctx.q[_axis.joint_id],
             _ctx.target_q[_axis.joint_id],
             *_axis.velocity_actual_value,

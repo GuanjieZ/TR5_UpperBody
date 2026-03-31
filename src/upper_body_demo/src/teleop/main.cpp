@@ -177,8 +177,9 @@ public:
     joint_enable_sub_ = this->create_subscription<std_msgs::msg::Bool>(
       "enable", 1,
       [this](const std_msgs::msg::Bool::SharedPtr msg) {
+        std::scoped_lock lk(ctx.current_m);
         ctx.enable_flags = {
-            false, msg->data, // head
+            false, false, // head
             msg->data, msg->data, msg->data, msg->data, msg->data, false, false, // left arm
             msg->data, msg->data, msg->data, msg->data, msg->data, false, false  // right arm
         };
